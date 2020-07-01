@@ -61,4 +61,49 @@ header {
     header .headline h1 {
       color: #333334;
       font-size: 72px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-top: 1rem; }
+    header .headline p {
+      width: 52%;
+      font-size: 14px;
+      font-weight: 400;
+      color: #323231;
+      line-height: 20px; }
+    header .headline #line {
+      width: 36px;
+      height: 1px;
+      border: 4px solid #323231;
+      margin: 1rem 0; }
+    header .headline button {
+      width: 140px;
+      height: 36px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 29px;
+      text-align: center;
+      outline: none;
+      margin-top: 2rem;
+      background-color: #329595;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      border: none; }
+
+.offers {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto; }
+  .offers .offers-headline {
+    width: 30%; }
+  .offers .offers-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%; }
+    .offers .offers-info .offer-item {
+      width: 40%; }

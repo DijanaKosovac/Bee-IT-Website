@@ -23,3 +23,8 @@
     text-align: center;
     outline: none;
 }
+
+@mixin horizontal-line {
+    width: 36px;
+    height: 1px;
+}
