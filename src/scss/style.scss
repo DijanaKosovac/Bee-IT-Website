@@ -10,19 +10,7 @@ body {
 }
 
 .blue-btn {
-    width: 140px;
-    height: 36px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 29px;
-    margin-top: 2rem;
-    background-color: $light-blue;
-    color: $primary-white;
-    font-size: 12px;
-    font-weight: 700;
-    border: none;
-    text-align: center;
-    outline: none;
+    @include blue-button();
 }
 
 header {
@@ -128,13 +116,38 @@ header {
 
     .offers-info {
         @include flex(space-between, center, wrap);
-        width: 60%;
+        width: 61%;
+        height: 820px;
 
         .offer-item {
-            width: 40%;
+            width: 42%;
             padding: 2rem;
             margin-bottom: 2rem;
+            border-radius: 6px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+            &:nth-child(even) {
+                align-self: flex-end;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-left: -2rem;
+                padding-bottom: 1rem;
+                opacity: 0.5;
+                color: rgba(155, 155, 155, 0.3);
+            }
+
+            h4 {
+                font-size: 18px;
+                padding: 0.5rem 0;
+            }
+
+            p {
+                font-size: 14px;
+                text-align: center;
+                padding: 0.5rem 0;
+            }
         }
     }
 }

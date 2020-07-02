@@ -24,6 +24,22 @@
     outline: none;
 }
 
+@mixin blue-button {
+    width: 140px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 29px;
+    margin-top: 2rem;
+    background-color: $light-blue;
+    color: $primary-white;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
 @mixin horizontal-line {
     width: 36px;
     height: 1px;
