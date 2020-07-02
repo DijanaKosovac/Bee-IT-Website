@@ -24,12 +24,10 @@ body {
   outline: none; }
 
 header {
-  width: 100%; }
-  header .header-bkg {
-    position: absolute;
-    z-index: -5;
-    top: -70%;
-    left: 38%; }
+  width: 100%;
+  height: 100vh;
+  background: url(../images/Mask.png) no-repeat;
+  background-position: 100% 0; }
   header .header-content {
     display: flex;
     justify-content: space-between;
@@ -101,7 +99,7 @@ header {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 90%;
-  margin: auto;
+  margin: 4rem auto;
   color: #323231; }
   .offers .offers-headline {
     width: 30%; }
@@ -117,7 +115,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     width: 61%;
-    height: 820px; }
+    min-height: 900px; }
     .offers .offers-info .offer-item {
       width: 42%;
       padding: 2rem;
@@ -126,6 +124,8 @@ header {
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
       .offers .offers-info .offer-item:nth-child(even) {
         align-self: flex-end; }
+      .offers .offers-info .offer-item:nth-child(odd) {
+        align-self: flex-start; }
       .offers .offers-info .offer-item h1 {
         font-size: 50px;
         margin-left: -2rem;
@@ -139,3 +139,51 @@ header {
         font-size: 14px;
         text-align: center;
         padding: 0.5rem 0; }
+
+.partnerships {
+  background: rgba(216, 216, 216, 0.2);
+  z-index: -99;
+  padding-top: 13rem;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  color: #323231; }
+  .partnerships .skew {
+    background: url(../images/Group.png) no-repeat;
+    background-position: center;
+    background-size: contain; }
+  .partnerships .partnership-content {
+    width: 90%;
+    margin: auto; }
+    .partnerships .partnership-content .partnership-caption {
+      width: 50%; }
+      .partnerships .partnership-content .partnership-caption h2 {
+        font-size: 36px;
+        padding-bottom: 1rem; }
+      .partnerships .partnership-content .partnership-caption p {
+        font-size: 14px; }
+  .partnerships .partnership-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column; }
+    .partnerships .partnership-info .info-box {
+      width: 20%; }
+      .partnerships .partnership-info .info-box h3 {
+        font-size: 24px;
+        margin: 1rem 0; }
+      .partnerships .partnership-info .info-box h4 {
+        margin: 1rem 0; }
+      .partnerships .partnership-info .info-box p {
+        margin-bottom: 1rem; }
+      .partnerships .partnership-info .info-box span {
+        color: #329595;
+        font-weight: 700;
+        font-size: 12px; }
+    .partnerships .partnership-info .box-1 {
+      margin: 10rem 0 0 30rem; }
+    .partnerships .partnership-info .box-2 {
+      margin-right: 20rem; }
+    .partnerships .partnership-info .box-3 {
+      margin-left: 32rem; }
+    .partnerships .partnership-info .box-4 {
+      margin-right: 20rem; }

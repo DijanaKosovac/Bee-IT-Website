@@ -9,19 +9,16 @@ body {
     overflow-x: hidden;
 }
 
+
 .blue-btn {
     @include blue-button();
 }
 
 header {
     width: 100%;
-
-    .header-bkg {
-        position: absolute;
-        z-index: -5;
-        top: -70%;
-        left: 38%;
-    }
+    height: 100vh;
+    background: url(../images/Mask.png) no-repeat;
+    background-position: 100% 0;
 
     .header-content {
         @include flex(space-between, center, wrap);
@@ -97,7 +94,7 @@ header {
 .offers {
     @include flex(space-around, flex-start, wrap);
     width: 90%;
-    margin: auto;
+    margin: 4rem auto;
     color: $black;
 
     .offers-headline {
@@ -117,7 +114,7 @@ header {
     .offers-info {
         @include flex(space-between, center, wrap);
         width: 61%;
-        height: 820px;
+        min-height: 900px;
 
         .offer-item {
             width: 42%;
@@ -128,6 +125,10 @@ header {
 
             &:nth-child(even) {
                 align-self: flex-end;
+            }
+
+            &:nth-child(odd) {
+                align-self: flex-start;
             }
 
             h1 {
@@ -150,4 +151,84 @@ header {
             }
         }
     }
+}
+
+
+.partnerships {
+    background: $primary-background;
+    z-index: -99;
+    padding-top: 13rem;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    color: $black;
+
+    .skew {
+        background: url(../images/Group.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .partnership-content {
+        width: 90%;
+        margin: auto;
+
+        .partnership-caption {
+            width: 50%;
+
+            h2 {
+                font-size: 36px;
+                padding-bottom: 1rem;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .partnership-info {
+        @include flex(space-between, center, nowrap);
+        flex-direction: column;
+
+        .info-box {
+            width: 20%;
+
+            h3 {
+                font-size: 24px;
+                margin: 1rem 0;
+            }
+
+            h4 {
+                margin: 1rem 0;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            span {
+                color: $light-blue;
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+
+        .box-1 {
+            margin: 10rem 0 0 30rem;
+        }
+
+        .box-2 {
+            margin-right: 20rem;
+        }
+
+        .box-3 {
+            margin-left: 32rem;
+        }
+
+        .box-4 {
+            margin-right: 20rem;
+        }
+    }
+
+
+
 }
