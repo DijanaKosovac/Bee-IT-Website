@@ -1,0 +1,21 @@
+footer {
+    background-color: $yellow;
+    padding: 2rem;
+
+    .footer-content {
+        @include flex(space-between, center, wrap);
+    }
+
+    .social-links {
+        @include flex(space-between, center, wrap);
+        width: 42%;
+        font-size: 12px;
+
+        .social-info {
+            width: 320px;
+            text-align: right;
+            padding-right: 1rem;
+            border-right: solid 1px #f8ad00;
+        }
+    }
+}

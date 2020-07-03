@@ -1,0 +1,40 @@
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/Mask.png) no-repeat;
+    background-position: 100% 0;
+
+    .header-content {
+        @include flex(space-between, center, wrap);
+        padding-top: 2rem;
+    }
+
+    nav {
+        @include flex(space-between, center, wrap);
+        width: 60%;
+
+        .nav-list {
+            @include flex(space-between, center, wrap);
+            width: 70%;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: $header-font-color;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn {
+            @include button();
+            color: $light-blue;
+            background: none;
+            border: 2px solid $light-blue;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                border: 4px solid $light-blue;
+            }
+        }
+    }
+}

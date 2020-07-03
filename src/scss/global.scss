@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// HELPERS
+@import '1-helpers/mixins';
+@import '1-helpers/variables';
+
+// LAYOUT
+@import '2-layout/header';
+@import '2-layout/footer';
+
+@include main();
+
+.blue-btn {
+    @include blue-button();
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.headline {
+    width: 50%;
+    margin: 8rem 2rem;
+
+    h4 {
+        color: $light-blue;
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 900;
+    }
+
+    h1 {
+        color: $header-font-color;
+        font-size: 72px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-top: 1rem;
+    }
+
+    p {
+        width: 52%;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .line {
+        @include horizontal-line($black);
+    }
+}
+
+
+.offers {
+    @include flex(space-around, flex-start, wrap);
+    margin: 4rem auto;
+
+    .offers-headline {
+        width: 30%;
+
+        h1 {
+            @include headline();
+        }
+
+        p {
+            width: 85%;
+            font-size: 14px;
+        }
+    }
+
+    .offers-info {
+        @include flex(space-between, center, wrap);
+        width: 61%;
+        min-height: 900px;
+
+        .offer-item {
+            width: 42%;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 6px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+            &:nth-child(even) {
+                align-self: flex-end;
+            }
+
+            &:nth-child(odd) {
+                align-self: flex-start;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-left: -2rem;
+                padding-bottom: 1rem;
+                opacity: 0.5;
+                color: $transparent-headline;
+            }
+
+            h4 {
+                font-size: 18px;
+                padding: 0.5rem 0;
+            }
+
+            p {
+                font-size: 14px;
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+        }
+    }
+}
+
+
+.partnerships {
+    background: $primary-background;
+    z-index: -99;
+    padding-top: 13rem;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+
+    .skew {
+        background: url(../images/Group.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .partnership-content {
+        .partnership-caption {
+            width: 50%;
+
+            h1 {
+                @include headline();
+            }
+
+            p {
+                font-size: 14px;
+                width: 340px;
+            }
+        }
+    }
+
+    .partnership-info {
+        @include flex(space-between, center, nowrap);
+        flex-direction: column;
+
+        .info-box {
+            width: 20%;
+
+            h3 {
+                font-size: 24px;
+                margin: 1rem 0;
+            }
+
+            h4 {
+                margin: 1rem 0;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            span {
+                color: $light-blue;
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+
+        .box-1 {
+            position: relative;
+            top: 150px;
+            left: 283px;
+        }
+
+        .box-2 {
+            position: relative;
+            right: 192px;
+            top: 97px;
+        }
+
+        .box-3 {
+            position: relative;
+            left: 320px;
+        }
+
+        .box-4 {
+            position: relative;
+            right: 170px;
+            bottom: 77px;
+        }
+    }
+}
+
+.about {
+    @include flex(space-around, center, nowrap);
+    width: 100%;
+    margin-top: 10rem;
+    padding-bottom: 5rem;
+
+    .about-caption {
+        width: 30%;
+
+        h1 {
+            @include headline();
+        }
+
+        h4 {
+            margin: 1rem 0;
+        }
+
+    }
+
+    .slider {
+        width: 60%;
+
+        .slider-bkg {
+            @include flex(center, center, nowrap);
+            width: 100%;
+            height: 207px;
+            border-radius: 6px;
+            background: #fec108;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+            .slide {
+                width: 310px;
+                height: 310px;
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
+.blog {
+    background-color: $primary-background;
+    padding: 4rem;
+
+    .blog-caption {
+        text-align: center;
+
+        h1 {
+            @include headline();
+        }
+    }
+
+    .blog-posts {
+        @include flex(space-between, center, wrap);
+        margin-top: 4rem;
+
+        .post {
+            width: 340px;
+            height: 488px;
+            border-radius: 6px;
+            background-color: $primary-white;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+            .post-info {
+                padding: 1rem;
+            }
+        }
+
+        .case-study-wrap {
+            width: 74px;
+            height: 21px;
+            border-radius: 14px;
+            text-align: center;
+            background: $blue-background;
+
+            .case-study {
+                width: 59px;
+                height: 20px;
+                color: $light-blue;
+                font-size: 10px;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+        }
+
+        .blog-label-wrap {
+            width: 50px;
+            height: 21px;
+            border-radius: 14px;
+            background: $blog-background;
+            text-align: center;
+
+            .blog-label {
+                width: 25px;
+                height: 20px;
+                color: $span-yellow;
+                font-size: 10px;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+
+        small {
+            color: $light-grey;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 1rem 0;
+        }
+
+        .read-more {
+            color: $light-blue;
+            font-weight: 700;
+            font-size: 12px;
+        }
+    }
+}
+
+.contact {
+    background-color: $primary-background;
+    padding: 5rem;
+
+    .contact-content {
+        @include flex(center, center, nowrap);
+        flex-direction: column;
+    }
+
+    .line {
+        @include horizontal-line($yellow);
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+}
