@@ -213,20 +213,19 @@
 
     .slider {
         width: 60%;
+        @include flex(center, center, nowrap);
+        height: 207px;
+        border-radius: 6px;
+        background: $yellow;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
-        .slider-bkg {
-            @include flex(center, center, nowrap);
-            width: 100%;
-            height: 207px;
+        .slider_items {
+            width: 310px;
+            height: 310px;
             border-radius: 6px;
-            background: #fec108;
+            background-color: $primary-white;
+            position: relative;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-
-            .slide {
-                width: 310px;
-                height: 310px;
-                border-radius: 6px;
-            }
         }
     }
 }
