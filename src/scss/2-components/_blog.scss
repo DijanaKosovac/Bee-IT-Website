@@ -1,0 +1,74 @@
+.blog {
+    background-color: $primary-background;
+    padding: 4rem;
+
+    .blog-caption {
+        text-align: center;
+    }
+}
+
+.blog-posts {
+    @include flex(space-between, center, wrap);
+    margin-top: 4rem;
+
+    .post {
+        width: 340px;
+        height: 488px;
+        border-radius: 6px;
+        background-color: $primary-white;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+        .post-info {
+            padding: 1rem;
+        }
+    }
+}
+
+.case-study-wrap {
+    width: 74px;
+    height: 21px;
+    border-radius: 14px;
+    text-align: center;
+    background: $blue-background;
+
+    .case-study {
+        width: 59px;
+        height: 20px;
+        color: $light-blue;
+        font-size: 10px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.blog-label-wrap {
+    width: 50px;
+    height: 21px;
+    border-radius: 14px;
+    background: $blog-background;
+    text-align: center;
+
+    .blog-label {
+        width: 25px;
+        height: 20px;
+        color: $span-yellow;
+        font-size: 10px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.post-caption {
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.blog-date {
+    color: $light-grey;
+}
+
+.read-more {
+    color: $light-blue;
+    font-weight: 700;
+    font-size: 12px;
+}

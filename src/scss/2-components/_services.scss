@@ -1,0 +1,52 @@
+.services {
+    @include flex(space-around, flex-start, wrap);
+    margin: 4rem auto;
+
+    .services-headline {
+        width: 30%;
+
+        p {
+            width: 85%;
+        }
+    }
+}
+
+.services-info {
+    @include flex(space-between, center, wrap);
+    width: 69%;
+    min-height: 900px;
+
+    .service-item {
+        width: 42%;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 6px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+        &:nth-child(even) {
+            align-self: flex-end;
+        }
+
+        &:nth-child(odd) {
+            align-self: flex-start;
+        }
+
+        .transparent-caption {
+            font-size: 50px;
+            margin-left: -2rem;
+            padding-bottom: 1rem;
+            opacity: 0.5;
+            color: $transparent-headline;
+        }
+
+        h4 {
+            font-size: 18px;
+            padding: 0.5rem 0;
+        }
+
+        p {
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+    }
+}

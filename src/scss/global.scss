@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-// HELPERS
+// UTILITIES
 @import '1-utilities/mixins';
 @import '1-utilities/variables';
 
-// LAYOUT
+// COMPONENTS
 @import '2-components/header';
 @import '2-components/footer';
+@import '2-components/services';
+@import '2-components/partnership';
+@import '2-components/slider';
+@import '2-components/blog';
+@import '2-components/contact';
+@import '2-components/main-headline';
 
 @include main();
 
@@ -30,325 +36,56 @@ h1 {
     margin: 0 auto;
 }
 
-.headline {
-    width: 50%;
-    margin: 8rem 2rem;
-
-    .headline-1 {
-        color: $light-blue;
-        font-size: 28px;
-        line-height: 40px;
-        font-weight: 900;
-    }
-
-    .headline-2 {
-        color: $header-font-color;
-        font-size: 72px;
-        text-transform: uppercase;
-        font-weight: 900;
-        margin-top: 1rem;
-    }
-}
-
-.headline-info {
-    width: 52%;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.line {
-    @include horizontal-line($black);
-}
-
-.offers {
-    @include flex(space-around, flex-start, wrap);
-    margin: 4rem auto;
-
-    .offers-headline {
-        width: 30%;
-
-        p {
-            width: 85%;
-        }
-    }
-}
-
-.offers-info {
-    @include flex(space-between, center, wrap);
-    width: 69%;
-    min-height: 900px;
-
-    .offer-item {
-        width: 42%;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        border-radius: 6px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-
-        &:nth-child(even) {
-            align-self: flex-end;
-        }
-
-        &:nth-child(odd) {
-            align-self: flex-start;
-        }
-
-        .transparent-caption {
-            font-size: 50px;
-            margin-left: -2rem;
-            padding-bottom: 1rem;
-            opacity: 0.5;
-            color: $transparent-headline;
-        }
-
-        h4 {
-            font-size: 18px;
-            padding: 0.5rem 0;
-        }
-
-        p {
-            text-align: center;
-            padding: 0.5rem 0;
-        }
-    }
+#current {
+    color: $light-blue;
+    font-weight: 700;
 }
 
 
-
-.partnerships {
-    background: $primary-background;
-    z-index: -99;
-    padding-top: 13rem;
-    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-
-    .skew {
-        background: url(../images/Group.png) no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-}
-
-.partnership-content {
-    .partnership-caption {
-        width: 50%;
-
-        p {
-            width: 340px;
-        }
-    }
-}
-
-.partnership-info {
-    @include flex(space-between, center, nowrap);
-    flex-direction: column;
-
-    .info-box {
-        width: 20%;
-
-        h3 {
-            font-size: 24px;
-            margin: 1rem 0;
-        }
-
-        h4 {
-            margin: 1rem 0;
-        }
-
-        span {
-            color: $light-blue;
-            font-weight: 700;
-            font-size: 12px;
-        }
-    }
-}
-
-.box-1 {
-    position: relative;
-    top: 150px;
-    left: 283px;
-}
-
-.box-2 {
-    position: relative;
-    right: 192px;
-    top: 97px;
-}
-
-.box-3 {
-    position: relative;
-    left: 320px;
-}
-
-.box-4 {
-    position: relative;
-    right: 170px;
-    bottom: 77px;
-}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $yellow;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 7rem;
 
 
-
-.about {
-    @include flex(space-around, center, nowrap);
-    width: 100%;
-    min-height: 600px;
-    position: relative;
-
-    .about-caption {
-        width: 30%;
-
-        h4 {
-            margin: 1rem 0;
-        }
-
-    }
-}
-
-.slider {
-    width: 60%;
-    background-image: url(../images/rectangle.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 207px;
-    text-align: center;
-
-    .slider_item {
-        width: 80% !important;
-        height: 310px;
-        border-radius: 6px;
-        background-color: $primary-white;
-        position: relative;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .slider-content {
-        @include flex(center, end, nowrap);
-        width: 100%;
-        height: 100%;
+    .sidenav-wrapper {
+        @include flex(space-around, flex-start, nowrap);
         flex-direction: column;
+        width: 371px;
+        height: 531px;
+        margin: 0 auto;
         padding: 1rem;
     }
 }
 
-.slider-caption {
-    padding: 1rem 0;
-}
-
-.slick-slide {
-    margin: 0 5px;
-}
-
-.next {
-    bottom: 222px;
-    position: absolute;
-    left: 126px
-}
-
-.prev {
-    position: relative;
-    right: 251px;
-    bottom: 66px;
-}
-
-.prev[aria-disabled=false] {
-    content: url('../images/next-reverse.svg');
-}
-
-.next.slick-disabled {
-    content: url('../images/previous-revrese.svg');
-}
-
-.blog {
-    background-color: $primary-background;
-    padding: 4rem;
-
-    .blog-caption {
-        text-align: center;
-    }
-}
-
-.blog-posts {
-    @include flex(space-between, center, wrap);
-    margin-top: 4rem;
-
-    .post {
-        width: 340px;
-        height: 488px;
-        border-radius: 6px;
-        background-color: $primary-white;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-
-        .post-info {
-            padding: 1rem;
-        }
-    }
-}
-
-.case-study-wrap {
-    width: 74px;
-    height: 21px;
-    border-radius: 14px;
-    text-align: center;
-    background: $blue-background;
-
-    .case-study {
-        width: 59px;
-        height: 20px;
-        color: $light-blue;
-        font-size: 10px;
-        line-height: 20px;
-        text-transform: uppercase;
-    }
-}
-
-.blog-label-wrap {
-    width: 50px;
-    height: 21px;
-    border-radius: 14px;
-    background: $blog-background;
-    text-align: center;
-
-    .blog-label {
-        width: 25px;
-        height: 20px;
-        color: $span-yellow;
-        font-size: 10px;
-        line-height: 20px;
-        text-transform: uppercase;
-    }
-}
-
-.post-caption {
+.sidenav-headline {
     font-size: 18px;
-    margin-top: 1rem;
 }
 
-.blog-date {
-    color: $light-grey;
+
+.side-list {
+    list-style: none;
+    margin: 1rem 0;
+    border-left: solid 1px $service-nav;
+    padding: 0 1rem;
+
+    .side-item {
+        padding: 0.3rem 0;
+    }
 }
 
-.read-more {
+.side-links {
+    text-decoration: none;
+    color: $service-nav;
+}
+
+#side-current {
     color: $light-blue;
-    font-weight: 700;
-    font-size: 12px;
-}
-
-
-
-.contact {
-    background-color: $primary-background;
-    padding: 5rem;
-
-    .contact-content {
-        @include flex(center, center, nowrap);
-        flex-direction: column;
-    }
-
-    .line {
-        @include horizontal-line($yellow);
-    }
-
-    .contact-caption {
-        font-size: 24px;
-        margin-bottom: 1rem;
-    }
 }

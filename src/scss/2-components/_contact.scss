@@ -1,0 +1,18 @@
+.contact {
+    background-color: $primary-background;
+    padding: 5rem;
+
+    .contact-content {
+        @include flex(center, center, nowrap);
+        flex-direction: column;
+    }
+
+    .line {
+        @include horizontal-line($yellow);
+    }
+
+    .contact-caption {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+}
