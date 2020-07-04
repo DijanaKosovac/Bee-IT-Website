@@ -3,6 +3,7 @@ header {
     height: 100vh;
     background: url(../images/Mask.png) no-repeat;
     background-position: 100% 0;
+    background-size: contain;
 
     .header-content {
         @include flex(space-between, center, wrap);
