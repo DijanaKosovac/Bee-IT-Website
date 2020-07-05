@@ -6,14 +6,14 @@
     background-size: contain;
 
     .header-content {
-      @include flex(space-between, center, wrap);
-      padding-top: 2rem;
-  }
+        @include flex(space-between, center, wrap);
+        padding-top: 2rem;
+    }
 }
 
 nav {
     @include flex(space-between, center, wrap);
-    width: 60%;
+    width: 75%;
 
     .nav-list {
         @include flex(space-between, center, wrap);
