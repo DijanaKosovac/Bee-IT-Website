@@ -16,3 +16,24 @@
         margin-bottom: 1rem;
     }
 }
+
+@include mobile {
+    .contact {
+        padding: 2rem;
+
+        .contact-content {
+            text-align: center;
+        }
+    }
+}
+
+
+@include mobile-up {
+    .contact {
+        padding: 3rem;
+
+        .contact-content {
+            text-align: center;
+        }
+    }
+}

@@ -12,10 +12,64 @@ footer {
         font-size: 12px;
 
         .social-info {
-            width: 320px;
+            width: 39%;
             text-align: right;
             padding-right: 1rem;
             border-right: solid 1px $span-yellow;
+        }
+    }
+}
+
+@include mobile {
+
+    footer {
+        .footer-content {
+            @include flex(center, center, wrap);
+            flex-direction: column;
+        }
+
+        .social-links {
+            @include flex(center, center, wrap);
+            flex-direction: column;
+            width: 100%;
+
+            .social-info {
+                padding: 1rem 0;
+                border-right: none;
+                width: 100%;
+                text-align: center;
+            }
+
+            span {
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+@include mobile-up {
+
+    footer {
+        .footer-content {
+            @include flex(center, center, wrap);
+            flex-direction: column;
+        }
+
+        .social-links {
+            @include flex(center, center, wrap);
+            flex-direction: column;
+            width: 100%;
+
+            .social-info {
+                padding: 1rem 0;
+                border-right: none;
+                width: 100%;
+                text-align: center;
+            }
+
+            span {
+                padding: 1rem 0;
+            }
         }
     }
 }

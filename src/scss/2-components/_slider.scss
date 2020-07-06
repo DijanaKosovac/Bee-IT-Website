@@ -59,3 +59,83 @@
 .next.slick-disabled {
     content: url('../images/previous-revrese.svg');
 }
+
+@include mobile {
+    .about {
+        @include flex(center, center, nowrap);
+        flex-direction: column;
+        width: 100%;
+        min-height: 873px;
+
+
+        .about-caption {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .slider {
+        width: 100%;
+        height: 300px;
+        margin-top: 2rem;
+    }
+
+    .next {
+        bottom: 285px;
+        left: 186px;
+    }
+
+    .prev {
+        right: 51px;
+        bottom: 38px;
+    }
+}
+
+@include mobile-up {
+    .about {
+        @include flex(center, center, nowrap);
+        flex-direction: column;
+        width: 100%;
+        min-height: 873px;
+
+
+        .about-caption {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .slider {
+        width: 100%;
+        height: 300px;
+        margin-top: 2rem;
+
+        .slider_item {
+            width: 55% !important;
+        }
+    }
+
+    .next {
+        bottom: 285px;
+        left: 341px;
+    }
+
+    .prev {
+        right: 90px;
+        bottom: 38px;
+    }
+}
+
+@include tablet {
+    .next {
+        bottom: 222px;
+        left: 250px;
+    }
+
+    .prev {
+        right: 89px;
+        bottom: 66px;
+    }
+}

@@ -45,3 +45,75 @@
         }
     }
 }
+
+@include mobile {
+    .services {
+        @include flex(center, center, nowrap);
+        flex-direction: column;
+
+        .services-headline {
+            width: 90%;
+            text-align: center;
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+    .services-info {
+        @include flex(center, center, wrap);
+        flex-direction: column;
+        width: 100%;
+        padding-top: 2rem;
+
+        .service-item {
+            width: 90%;
+
+            &:nth-child(even),
+            &:nth-child(odd) {
+                align-self: center;
+            }
+        }
+    }
+}
+
+@include mobile-up {
+    .services {
+        @include flex(center, center, nowrap);
+        flex-direction: column;
+
+        .services-headline {
+            width: 90%;
+            text-align: center;
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+    .services-info {
+        @include flex(center, center, wrap);
+        flex-direction: column;
+        width: 100%;
+        padding-top: 2rem;
+
+        .service-item {
+            width: 50%;
+
+            &:nth-child(even),
+            &:nth-child(odd) {
+                align-self: center;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .services-info {
+        .service-item {
+            width: 48%;
+        }
+    }
+}

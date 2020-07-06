@@ -27,3 +27,64 @@
     font-weight: 400;
     line-height: 20px;
 }
+
+.salesforce-caption {
+    font-size: 60px;
+    color: $header-font-color;
+}
+
+@include mobile {
+    .headline {
+        @include flex(center, center, nowrap);
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        .headline-1 {
+            font-size: 20px;
+        }
+
+        .headline-2 {
+            font-size: 40px;
+        }
+    }
+
+    .headline-info {
+        width: 90%;
+    }
+
+    .salesforce-caption {
+        font-size: 40px;
+    }
+}
+
+@include mobile-up {
+    .headline {
+        @include flex(center, center, nowrap);
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        .headline-1 {
+            font-size: 30px;
+        }
+
+        .headline-2 {
+            font-size: 50px;
+        }
+    }
+
+    .headline-info {
+        width: 90%;
+    }
+
+    .salesforce-caption {
+        font-size: 40px;
+    }
+}
+
+@include tablet {
+    .headline {
+        width: 100%;
+    }
+}

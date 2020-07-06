@@ -73,3 +73,24 @@
     font-weight: 700;
     font-size: 12px;
 }
+
+@include mobile {
+    .blog {
+        padding: 0;
+
+        .blog-caption {
+            margin-top: 4rem;
+        }
+    }
+
+    .blog-posts {
+        .post {
+            width: 290px;
+            height: 460px;
+
+            .post-img {
+                width: 100%;
+            }
+        }
+    }
+}

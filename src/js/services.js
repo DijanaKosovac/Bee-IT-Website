@@ -18,5 +18,10 @@ headline.addEventListener('click', () => {
     header.style.backgroundImage = 'url(./src/images/Mask.png)';
 })
 
+$(document).ready(function () {
+    $('.menu').click(function () {
+        $('nav').toggleClass('active');
+    })
+})
 
 

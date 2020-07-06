@@ -17,13 +17,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 75%; }
+  width: 100%; }
   nav .nav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 50%;
     list-style: none; }
   nav .nav-link {
     color: #333334;
@@ -45,6 +45,73 @@ nav {
     nav .btn:hover {
       border: 4px solid #329595; }
 
+.logo {
+  width: 20%; }
+
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fec108;
+  display: none; }
+
+@media (max-width: 576px) {
+  .header {
+    background: none; }
+    .header .container,
+    .header .header-content {
+      padding: 0;
+      justify-content: center; }
+  nav {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #fec108;
+    display: none; }
+    nav .nav-list {
+      width: 100%;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 1rem 0; }
+      nav .nav-list li {
+        margin: 0.5rem 0; }
+  .toggle {
+    display: block; }
+  .active {
+    display: block;
+    padding: 1rem; } }
+
+@media (min-width: 576px) and (max-width: 720px) {
+  .header {
+    background: none; }
+    .header .container,
+    .header .header-content {
+      padding: 0;
+      justify-content: center; }
+  nav {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #fec108;
+    display: none; }
+    nav .nav-list {
+      width: 100%;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 1rem 0; }
+      nav .nav-list li {
+        margin: 0.5rem 0; }
+  .toggle {
+    display: block; }
+  .active {
+    display: block;
+    padding: 1rem; } }
+
+@media (min-width: 720px) and (max-width: 968px) {
+  nav .logo {
+    width: 15%; }
+  nav .nav-list {
+    width: 62%; } }
+
 footer {
   background-color: #fec108;
   padding: 2rem; }
@@ -61,10 +128,54 @@ footer {
     width: 55%;
     font-size: 12px; }
     footer .social-links .social-info {
-      width: 320px;
+      width: 39%;
       text-align: right;
       padding-right: 1rem;
       border-right: solid 1px #f8ad00; }
+
+@media (max-width: 576px) {
+  footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; }
+  footer .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%; }
+    footer .social-links .social-info {
+      padding: 1rem 0;
+      border-right: none;
+      width: 100%;
+      text-align: center; }
+    footer .social-links span {
+      padding: 1rem 0; } }
+
+@media (min-width: 576px) and (max-width: 720px) {
+  footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; }
+  footer .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%; }
+    footer .social-links .social-info {
+      padding: 1rem 0;
+      border-right: none;
+      width: 100%;
+      text-align: center; }
+    footer .social-links span {
+      padding: 1rem 0; } }
 
 .services {
   display: flex;
@@ -104,6 +215,60 @@ footer {
       padding: 0.5rem 0;
       text-align: center; }
 
+@media (max-width: 576px) {
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column; }
+    .services .services-headline {
+      width: 90%;
+      text-align: center; }
+      .services .services-headline p {
+        width: 100%; }
+  .services-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2rem; }
+    .services-info .service-item {
+      width: 90%; }
+      .services-info .service-item:nth-child(even), .services-info .service-item:nth-child(odd) {
+        align-self: center; } }
+
+@media (min-width: 576px) and (max-width: 720px) {
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column; }
+    .services .services-headline {
+      width: 90%;
+      text-align: center; }
+      .services .services-headline p {
+        width: 100%; }
+  .services-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2rem; }
+    .services-info .service-item {
+      width: 50%; }
+      .services-info .service-item:nth-child(even), .services-info .service-item:nth-child(odd) {
+        align-self: center; } }
+
+@media (min-width: 720px) and (max-width: 968px) {
+  .services-info .service-item {
+    width: 48%; } }
+
 .partnerships {
   background: rgba(216, 216, 216, 0.2);
   z-index: -99;
@@ -116,8 +281,6 @@ footer {
 
 .partnership-content .partnership-caption {
   width: 50%; }
-  .partnership-content .partnership-caption p {
-    width: 340px; }
 
 .partnership-info {
   display: flex;
@@ -153,6 +316,78 @@ footer {
   position: relative;
   right: 170px;
   bottom: 77px; }
+
+@media (max-width: 576px) {
+  .partnerships {
+    clip-path: none; }
+    .partnerships .skew {
+      background: none; }
+  .partnership-content {
+    text-align: center; }
+    .partnership-content .partnership-caption {
+      width: 100%;
+      text-align: center; }
+  .partnership-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .partnership-info .info-box {
+      width: 90%; }
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4 {
+    position: initial;
+    padding: 2rem 0; } }
+
+@media (min-width: 576px) and (max-width: 720px) {
+  .partnerships {
+    clip-path: none; }
+    .partnerships .skew {
+      background: none; }
+  .partnership-content {
+    text-align: center; }
+    .partnership-content .partnership-caption {
+      width: 100%;
+      text-align: center; }
+  .partnership-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .partnership-info .info-box {
+      width: 90%; }
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4 {
+    position: initial;
+    padding: 2rem 0; } }
+
+@media (min-width: 720px) and (max-width: 968px) {
+  .partnerships {
+    clip-path: none; }
+    .partnerships .skew {
+      background: none; }
+  .partnership-content {
+    text-align: center; }
+    .partnership-content .partnership-caption {
+      width: 100%;
+      text-align: center; }
+  .partnership-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .partnership-info .info-box {
+      width: 90%; }
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4 {
+    position: initial;
+    padding: 2rem 0; } }
 
 .about {
   display: flex;
@@ -208,6 +443,64 @@ footer {
 
 .next.slick-disabled {
   content: url("../images/previous-revrese.svg"); }
+
+@media (max-width: 576px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    min-height: 873px; }
+    .about .about-caption {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2rem; }
+  .slider {
+    width: 100%;
+    height: 300px;
+    margin-top: 2rem; }
+  .next {
+    bottom: 285px;
+    left: 186px; }
+  .prev {
+    right: 51px;
+    bottom: 38px; } }
+
+@media (min-width: 576px) and (max-width: 720px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    min-height: 873px; }
+    .about .about-caption {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2rem; }
+  .slider {
+    width: 100%;
+    height: 300px;
+    margin-top: 2rem; }
+    .slider .slider_item {
+      width: 55% !important; }
+  .next {
+    bottom: 285px;
+    left: 341px; }
+  .prev {
+    right: 90px;
+    bottom: 38px; } }
+
+@media (min-width: 720px) and (max-width: 968px) {
+  .next {
+    bottom: 222px;
+    left: 250px; }
+  .prev {
+    right: 89px;
+    bottom: 66px; } }
 
 .blog {
   background-color: rgba(216, 216, 216, 0.2);
@@ -271,6 +564,17 @@ footer {
   font-weight: 700;
   font-size: 12px; }
 
+@media (max-width: 576px) {
+  .blog {
+    padding: 0; }
+    .blog .blog-caption {
+      margin-top: 4rem; }
+  .blog-posts .post {
+    width: 290px;
+    height: 460px; }
+    .blog-posts .post .post-img {
+      width: 100%; } }
+
 .contact {
   background-color: rgba(216, 216, 216, 0.2);
   padding: 5rem; }
@@ -288,6 +592,18 @@ footer {
   .contact .contact-caption {
     font-size: 24px;
     margin-bottom: 1rem; }
+
+@media (max-width: 576px) {
+  .contact {
+    padding: 2rem; }
+    .contact .contact-content {
+      text-align: center; } }
+
+@media (min-width: 576px) and (max-width: 720px) {
+  .contact {
+    padding: 3rem; }
+    .contact .contact-content {
+      text-align: center; } }
 
 .headline {
   width: 50%;
@@ -313,6 +629,50 @@ footer {
   width: 52%;
   font-weight: 400;
   line-height: 20px; }
+
+.salesforce-caption {
+  font-size: 60px;
+  color: #333334; }
+
+@media (max-width: 576px) {
+  .headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    text-align: center; }
+    .headline .headline-1 {
+      font-size: 20px; }
+    .headline .headline-2 {
+      font-size: 40px; }
+  .headline-info {
+    width: 90%; }
+  .salesforce-caption {
+    font-size: 40px; } }
+
+@media (min-width: 576px) and (max-width: 720px) {
+  .headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    text-align: center; }
+    .headline .headline-1 {
+      font-size: 30px; }
+    .headline .headline-2 {
+      font-size: 50px; }
+  .headline-info {
+    width: 90%; }
+  .salesforce-caption {
+    font-size: 40px; } }
+
+@media (min-width: 720px) and (max-width: 968px) {
+  .headline {
+    width: 100%; } }
 
 .sidenav {
   height: 100%;
@@ -402,10 +762,6 @@ h4 {
 #current {
   color: #329595;
   font-weight: 700; }
-
-.salesforce-caption {
-  font-size: 60px;
-  color: #333334; }
 
 .report-info {
   font-size: 14px;

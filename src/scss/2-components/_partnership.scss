@@ -14,10 +14,6 @@
 .partnership-content {
     .partnership-caption {
         width: 50%;
-
-        p {
-            width: 340px;
-        }
     }
 }
 
@@ -62,4 +58,110 @@
     position: relative;
     right: 170px;
     bottom: 77px;
+}
+
+
+@include mobile {
+    .partnerships {
+        clip-path: none;
+
+        .skew {
+            background: none;
+        }
+    }
+
+    .partnership-content {
+        text-align: center;
+
+        .partnership-caption {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .partnership-info {
+        @include flex(center, center, nowrap);
+
+        .info-box {
+            width: 90%;
+        }
+    }
+
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4 {
+        position: initial;
+        padding: 2rem 0;
+    }
+}
+
+@include mobile-up {
+    .partnerships {
+        clip-path: none;
+
+        .skew {
+            background: none;
+        }
+    }
+
+    .partnership-content {
+        text-align: center;
+
+        .partnership-caption {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .partnership-info {
+        @include flex(center, center, nowrap);
+
+        .info-box {
+            width: 90%;
+        }
+    }
+
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4 {
+        position: initial;
+        padding: 2rem 0;
+    }
+}
+
+@include tablet {
+    .partnerships {
+        clip-path: none;
+
+        .skew {
+            background: none;
+        }
+    }
+
+    .partnership-content {
+        text-align: center;
+
+        .partnership-caption {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .partnership-info {
+        @include flex(center, center, nowrap);
+
+        .info-box {
+            width: 90%;
+        }
+    }
+
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4 {
+        position: initial;
+        padding: 2rem 0;
+    }
 }

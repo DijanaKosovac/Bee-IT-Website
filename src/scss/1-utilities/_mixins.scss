@@ -54,3 +54,21 @@
     font-weight: 900;
     margin: 1rem 0;
 }
+
+@mixin mobile {
+    @media (max-width: $extra_small-mobiles) {
+        @content;
+    }
+}
+
+@mixin mobile-up {
+    @media (min-width: $extra_small-mobiles) and (max-width: $s-mobiles) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $s-mobiles) and (max-width: $tablet) {
+        @content;
+    }
+}
