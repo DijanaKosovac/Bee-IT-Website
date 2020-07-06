@@ -55,9 +55,6 @@ h4 {
     color: $header-font-color;
 }
 
-.line {
-    @include horizontal-line($light-blue);
-}
 
 .report-info {
     font-size: 14px;

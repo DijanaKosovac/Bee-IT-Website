@@ -8,7 +8,7 @@ footer {
 
     .social-links {
         @include flex(space-between, center, wrap);
-        width: 42%;
+        width: 55%;
         font-size: 12px;
 
         .social-info {
