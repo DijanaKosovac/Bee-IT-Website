@@ -9,35 +9,178 @@
 </head>
 
 <body>
-    <header class="header">
+    <nav class="mobile-nav">
+        <a href="index.html"><img class="mobile-nav-logo" src="./src/images/beeit-logo.svg" alt="logo"></a>
+        <label for="drop" class="toggle"><img src="./src/images/menu.png" alt="menu"></label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li>
+                <label for="drop-1" class="toggle">Services +</label>
+                <a href="services.html">Services</a>
+                <input type="checkbox" id="drop-1" />
+                <ul>
+                    <li><a class="mobile-nav-links" href="services.html">Services</a></li>
+                    <li><a class="mobile-nav-links" href="salesforce-commerce.html">Salesforce Commerce Cloud
+                            development </a></li>
+                    <li><a class="mobile-nav-links" href="#">Magento development services</a></li>
+                    <li><a class="mobile-nav-links" href="#">M-commerce development</a></li>
+                    <li><a class="mobile-nav-links" href="#">E-commerce web development outsourcing</a></li>
+                    <li><a class="mobile-nav-links" href="#">Mobile app development</a></li>
+                    <li><a class="mobile-nav-links" href="#">Custom web development</a></li>
+                    <li><a class="mobile-nav-links" href="#">Bespoke software development</a></li>
+                    <li><a class="mobile-nav-links" href="#">System integration and migration</a></li>
+                    <li><a class="mobile-nav-links" href="#">Maintenance and support</a></li>
+                    <li><a class="mobile-nav-links" href="#">SEO & Marketing</a></li>
+                </ul>
+            </li>
+            <li><a class="mobile-nav-links" href="#">Technologies</a></li>
+            <li><a class="mobile-nav-links" href="#">Our results</a></li>
+            <li><a class="mobile-nav-links" href="#">About us</a></li>
+            <li><a class="mobile-nav-links" href="#">Careers</a></li>
+        </ul>
+    </nav>
+
+    <header class="header header--background">
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html"><img src="./src/images/beeit-logo.svg" alt="logo"></a>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a class="nav-link" href="services.html">Services</a></li>
-                        <li><a class="nav-link" href="#">Technologies</a></li>
-                        <li><a class="nav-link" href="our-results.html">Our results</a></li>
-                        <li><a class="nav-link" href="#">About us</a></li>
-                        <li><a class="nav-link" href="#">Careers</a></li>
+            <div class="header__content">
+                <nav class="header__nav">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="./src/images/beeit-logo.svg" alt="logo"></a>
+                    </div>
+                    <ul class="header__nav-list">
+                        <li><a class="header__nav-link" href="services.html">Services</a></li>
+                        <li><a class="header__nav-link" href="#">Technologies</a></li>
+                        <li><a class="header__nav-link" id="current" href="our-results.html">Our results</a></li>
+                        <li><a class="header__nav-link" href="#">About us</a></li>
+                        <li><a class="header__nav-link" href="#">Careers</a></li>
                     </ul>
-                    <div class="quote">
+                    <div class="header__quote">
                         <button class="btn">Request a quote</button>
                     </div>
                 </nav>
-                <div class="headline">
-                    <h1>Bringing Ecommerce Personalization to Life – 5 Key Features</h1>
-                    <div class="line"></div>
-                    <p>When you are surrounded by open-minded and communicative people, tackling tech problems is not
-                        hard, but FUN. Our team is small but carefully selected. Join our beehive and grow with us.</p>
-                    <button class="blue-btn">READ MORE</button>
+                <div class="headline-wrapper">
+                    <div class="headline">
+                        <small class="blog__post-date blog__post-date--blue">februar 2019, 15 minutes reading</small>
+                        <h1>Bringing Ecommerce Personalization to
+                            Life – 5 Key Features</h1>
+                        <div class="line"></div>
+                        <p class="headline__info">When you are surrounded by open-minded and communicative people,
+                            tackling
+                            tech problems is not hard, but FUN. Our team is small but carefully selected. Join our
+                            beehive
+                            and grow with us. </p>
+                        <button class="blue-btn">READ MORE</button>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="/src/images/start-team.png" alt="books">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-
+    <section class="blog blog--background">
+        <div class="container">
+            <div class="blog__posts">
+                <figure class="blog__single-post">
+                    <img class="blog__img" src="./src/images/keyboard.png" alt="blog-img">
+                    <div class="blog__post-info">
+                        <div class="blog__case-study-wrap">
+                            <span class="blog__case-study">Case Study</span>
+                        </div>
+                        <h3 class="blog__post-caption">How to Easily Setup Eclipse for Salesforce Commerce Cloud (SFCC)
+                        </h3>
+                        <small class="blog__post-date">februar 2019, 10 minutes reading</small>
+                        <p>What’s your preferable editor for development? We use both Visual Studio Code and Eclipse,
+                            for many reasons. If you want to test the benefits of Eclipse, I got you covered.</p>
+                        <span class="blog__read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
+                    </div>
+                </figure>
+                <figure class="blog__single-post">
+                    <img class="blog__img" src="./src/images/journal.png" alt="blog-img">
+                    <div class="blog__post-info">
+                        <div class="blog__label-wrap">
+                            <span class="blog__label">Blog</span>
+                        </div>
+                        <h3 class="blog__post-caption">Why Choose SFCC for Your Web Shop?</h3>
+                        <small class="blog__post-date">februar 2019, 15 minutes reading</small>
+                        <p>A healthy bee is a happy bee. We care about your health and each of our team members gets
+                            paid gym or crossfit membership and private physicians.</p>
+                        <span class="blog__read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
+                    </div>
+                </figure>
+                <figure class="blog__single-post">
+                    <img class="blog__img" src="./src/images/office.png" alt="blog-img">
+                    <div class="blog__post-info">
+                        <div class="blog__label-wrap">
+                            <span class="blog__label">Blog</span>
+                        </div>
+                        <h3 class="blog__post-caption">Bringing Ecommerce Personalization to Life – 5 Key Features</h3>
+                        <small class="blog__post-date">januar 2019, 5 minutes reading</small>
+                        <p>The fast growth of e-commerce is old news. With the expected global retail sales of $4.88
+                            billion by 2021, e-commerce is one of the most propulsive branches of the global economy.
+                        </p>
+                        <span class="blog__read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
+                    </div>
+                </figure>
+                <figure class="blog__single-post">
+                    <img class="blog__img" src="./src/images/diary.png" alt="blog-img">
+                    <div class="blog__post-info">
+                        <div class="blog__label-wrap">
+                            <span class="blog__label">Blog</span>
+                        </div>
+                        <h3 class="blog__post-caption">Bringing Ecommerce Personalization to Life – 5 Key Features</h3>
+                        <small class="blog__post-date">januar 2019, 5 minutes reading</small>
+                        <p>The fast growth of e-commerce is old news. With the expected global retail sales of $4.88
+                            billion by 2021, e-commerce is one of the most propulsive branches of the global economy.
+                        </p>
+                        <span class="blog__read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
+                    </div>
+                </figure>
+                <figure class="blog__single-post">
+                    <img class="blog__img" src="./src/images/table-details.png" alt="blog-img">
+                    <div class="blog__post-info">
+                        <div class="blog__label-wrap">
+                            <span class="blog__label">Blog</span>
+                        </div>
+                        <h3 class="blog__post-caption">Bringing Ecommerce Personalization to Life – 5 Key Features</h3>
+                        <small class="blog__post-date">januar 2019, 5 minutes reading</small>
+                        <p>The fast growth of e-commerce is old news. With the expected global retail sales of $4.88
+                            billion by 2021, e-commerce is one of the most propulsive branches of the global economy.
+                        </p>
+                        <span class="blog__read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
+                    </div>
+                </figure>
+                <figure class="blog__single-post">
+                    <img class="blog__img" src="./src/images/laptop.png" alt="blog-img">
+                    <div class="blog__post-info">
+                        <div class="blog__label-wrap">
+                            <span class="blog__label">Blog</span>
+                        </div>
+                        <h3 class="blog__post-caption">Bringing Ecommerce Personalization to Life – 5 Key Features</h3>
+                        <small class="blog__post-date">januar 2019, 5 minutes reading</small>
+                        <p>The fast growth of e-commerce is old news. With the expected global retail sales of $4.88
+                            billion by 2021, e-commerce is one of the most propulsive branches of the global economy.
+                        </p>
+                        <span class="blog__read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
+                    </div>
+                </figure>
+                <button class="blue-btn">LOAD MORE</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html"><img src="./src/images/beeit-logo.svg" alt="bee"></a>
+                <div class="social-links">
+                    <span class="social-info">Our hive is always buzzing with ideas,
+                        let us Bee your answer.</span>
+                    <span>Facebook</span>
+                    <span>Linkedin</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

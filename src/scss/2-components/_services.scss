@@ -1,119 +1,156 @@
 .services {
     @include flex(space-around, flex-start, wrap);
     margin: 4rem auto;
-
-    .services-headline {
-        width: 30%;
-
-        p {
-            width: 85%;
-        }
-    }
 }
 
-.services-info {
+.services__wrapper {
+    width: 30%;
+}
+
+.services__paragraph {
+    width: 85%;
+}
+
+.services__info {
     @include flex(space-between, center, wrap);
     width: 69%;
     min-height: 900px;
+}
 
-    .service-item {
-        width: 42%;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        border-radius: 6px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+.service__item {
+    width: 42%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
-        &:nth-child(even) {
-            align-self: flex-end;
-        }
+    &:nth-child(even) {
+        align-self: flex-end;
+    }
 
-        &:nth-child(odd) {
-            align-self: flex-start;
-        }
-
-        .transparent-caption {
-            font-size: 50px;
-            margin-left: -2rem;
-            padding-bottom: 1rem;
-            opacity: 0.5;
-            color: $transparent-headline;
-        }
-
-        .single-service {
-            padding: 0.5rem 0;
-            text-align: center;
-        }
+    &:nth-child(odd) {
+        align-self: flex-start;
     }
 }
+
+.service__transparent-caption {
+    font-size: 50px;
+    margin-left: -2rem;
+    padding-bottom: 1rem;
+    opacity: 0.5;
+    color: $transparent-headline;
+}
+
+.service__single-box {
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.services--columns {
+    @include flex(center, center, wrap);
+    flex-direction: column;
+}
+
+.services__wrapper--columns {
+    width: 70%;
+    @include flex(center, baseline, nowrap);
+}
+
+.services__info--large {
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.service__headline-wrapper {
+    width: 100%;
+    margin-right: 5rem;
+}
+
+.service__headline-wrapper {
+    width: 100%;
+}
+
+
 
 @include mobile {
     .services {
         @include flex(center, center, nowrap);
         flex-direction: column;
-
-        .services-headline {
-            width: 90%;
-            text-align: center;
-
-            p {
-                width: 100%;
-            }
-        }
     }
 
-    .services-info {
+    .services__headline {
+        width: 90%;
+        text-align: center;
+    }
+
+    .services__paragraph {
+        width: 100%;
+    }
+
+    .services__wrapper {
+        width: 90%;
+        text-align: center;
+    }
+
+    .services__info {
         @include flex(center, center, wrap);
         flex-direction: column;
         width: 100%;
         padding-top: 2rem;
+    }
 
-        .service-item {
-            width: 90%;
+    .service__item {
+        width: 90%;
 
-            &:nth-child(even),
-            &:nth-child(odd) {
-                align-self: center;
-            }
+        &:nth-child(even),
+        &:nth-child(odd) {
+            align-self: center;
         }
     }
+
+    .services__wrapper--columns {
+        width: 90%;
+        flex-direction: column;
+    }
 }
+
 
 @include mobile-up {
     .services {
         @include flex(center, center, nowrap);
         flex-direction: column;
-
-        .services-headline {
-            width: 90%;
-            text-align: center;
-
-            p {
-                width: 100%;
-            }
-        }
     }
 
-    .services-info {
+    .services__headline {
+        width: 90%;
+        text-align: center;
+    }
+
+    .services__paragraph {
+        width: 100%;
+    }
+
+    .services__info {
         @include flex(center, center, wrap);
         flex-direction: column;
         width: 100%;
         padding-top: 2rem;
+    }
 
-        .service-item {
-            width: 50%;
+    .service__item {
+        width: 50%;
 
-            &:nth-child(even),
-            &:nth-child(odd) {
-                align-self: center;
-            }
+        &:nth-child(even),
+        &:nth-child(odd) {
+            align-self: center;
         }
     }
 }
 
+
 @include tablet {
-    .services-info {
-        .service-item {
-            width: 48%;
-        }
+
+    .service__item {
+        width: 48%;
     }
 }

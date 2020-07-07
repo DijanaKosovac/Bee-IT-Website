@@ -34,7 +34,7 @@
                 </ul>
             </li>
             <li><a class="mobile-nav-links" href="#">Technologies</a></li>
-            <li><a class="mobile-nav-links" href="#">Our results</a></li>
+            <li><a class="mobile-nav-links" href="our-results.html">Our results</a></li>
             <li><a class="mobile-nav-links" href="#">About us</a></li>
             <li><a class="mobile-nav-links" href="#">Careers</a></li>
         </ul>
@@ -69,19 +69,19 @@
     <div class="slider-container">
         <header class="header">
             <div class="container">
-                <div class="header-content">
-                    <nav class="nav">
-                        <div class="logo">
+                <div class="header__content">
+                    <nav class="header__nav">
+                        <div class="header__logo">
                             <a href="index.html"><img src="./src/images/beeit-logo.svg" alt="logo"></a>
                         </div>
-                        <ul class="nav-list">
-                            <li><a class="nav-link service" id="current">Services</a></li>
-                            <li><a class="nav-link" href="#">Technologies</a></li>
-                            <li><a class="nav-link" href="our-results.html">Our results</a></li>
-                            <li><a class="nav-link" href="#">About us</a></li>
-                            <li><a class="nav-link" href="#">Careers</a></li>
+                        <ul class="header__nav-list">
+                            <li><a class="header__nav-link service" id="current">Services</a></li>
+                            <li><a class="header__nav-link" href="#">Technologies</a></li>
+                            <li><a class="header__nav-link" href="our-results.html">Our results</a></li>
+                            <li><a class="header__nav-link" href="#">About us</a></li>
+                            <li><a class="header__nav-link" href="#">Careers</a></li>
                         </ul>
-                        <div class="quote">
+                        <div class="header__quote">
                             <button class="btn">Request a quote</button>
                         </div>
                     </nav>
@@ -91,7 +91,7 @@
                     <div class="line"></div>
                     <h4>We are developing online business and solutions for long-term
                         success.</h4>
-                    <p class="headline-info">BeeIT teams have been developing high-performing and scalable e-commerce
+                    <p class="headline__info">BeeIT teams have been developing high-performing and scalable e-commerce
                         solutions
                         in more than ten countries, serving thousands of customers.</p>
                 </div>
@@ -99,19 +99,21 @@
         </header>
         <div class="container">
             <section class="services">
-                <div class="services-headline">
-                    <h1>What you get</h1>
+                <div class="services__wrapper">
+                    <h1 class="services__headline">What you get</h1>
                     <h4>Scalable and secure e-commerce web development</h4>
-                    <p>We build e-commerce businesses from scratch or we rebuild the existing shops
+                    <p class="services__paragraph">We build e-commerce businesses from scratch or we rebuild the
+                        existing shops
                         and platforms focusing
                         on helping you increase sales and profit.</p>
-                    <p>We believe it’s important we speak the same language when we work together.
+                    <p class="services__paragraph">We believe it’s important we speak the same language when we work
+                        together.
                         Thus, all clients,
                         despite of cooperation they chose, can be sure that they will receive:
                     </p>
                 </div>
-                <div class="services-info">
-                    <div class="service-item">
+                <div class="services__info">
+                    <div class="service__item">
                         <img src="./src/images/goals.svg" alt="business-goals-icon">
                         <h4>Partners who understand your business goals</h4>
                         <p>We strive to understand your intentions and needs and provide solutions
@@ -119,21 +121,21 @@
                             you can run business operations smoothly and swiftly.
                         </p>
                     </div>
-                    <div class="service-item">
+                    <div class="service__item">
                         <img src="./src/images/consultant.svg" alt="counsultant-icon">
                         <h4>Dedicated point of contact</h4>
                         <p>You will always know who to turn to if you need us. There will be no
                             bots, we offer human
                             interaction.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service__item">
                         <img src="./src/images/statistics.svg" alt="statistics-icon">
                         <h4>Timely and trustworthy communication</h4>
                         <p>We won’t wait until the deadline to contact you and you will always know
                             specifics and the stage
                             of your project. We won’t hide any obstacles we came across from you.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service__item">
                         <img src="./src/images/report.svg" alt="report-icon">
                         <h4>A signed NDA</h4>
                         <ul class="report-info">
@@ -201,52 +203,54 @@
 
         <section class="blog">
             <div class="container">
-                <div class="blog-caption">
-                    <h1>Built by BEE IT</h1>
-                    <p>See how we develop web businesses and build e-shops</p>
+                <div class="blog__caption">
+                    <h1 class="blog__main-caption">Built by BEE IT</h1>
+                    <p class="blog__paragraph">See how we develop web businesses and build e-shops</p>
                 </div>
-                <div class="blog-posts">
-                    <figure class="post">
-                        <img class="post-img" src="./src/images/blog-img1.png" alt="blog-img">
-                        <div class="post-info">
-                            <div class="case-study-wrap">
-                                <span class="case-study">Case Study</span>
+                <div class="blog__posts">
+                    <figure class="blog__single-post">
+                        <img class="blog__img" src="./src/images/blog-img1.png" alt="blog-img">
+                        <div class="blog__post-info">
+                            <div class="blog__case-study-wrap">
+                                <span class="blog__case-study">Case Study</span>
                             </div>
-                            <h3 class="post-caption">How to Easily Setup Eclipse for Salesforce Commerce Cloud (SFCC)
+                            <h3 class="blog__post-caption">How to Easily Setup Eclipse for Salesforce Commerce Cloud
+                                (SFCC)
                             </h3>
-                            <small class="blog-date">februar 2019, 10 minutes reading</small>
+                            <small class="blog__post-date">februar 2019, 10 minutes reading</small>
                             <p>What’s your preferable editor for development? We use both Visual Studio Code and
                                 Eclipse,
                                 for many reasons. If you want to test the benefits of Eclipse, I got you covered.</p>
-                            <span class="read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
+                            <span class="blog__read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
                         </div>
                     </figure>
-                    <figure class="post">
-                        <img class="post-img" src="./src/images/blog-img-2.png" alt="blog-img">
-                        <div class="post-info">
-                            <div class="blog-label-wrap">
-                                <span class="blog-label">Blog</span>
+                    <figure class="blog__single-post">
+                        <img class="blog__img" src="./src/images/blog-img-2.png" alt="blog-img">
+                        <div class="blog__post-info">
+                            <div class="blog__label-wrap">
+                                <span class="blog__label">Blog</span>
                             </div>
-                            <h3 class="post-caption">Why Choose SFCC for Your Web Shop?</h3>
-                            <small class="blog-date">februar 2019, 15 minutes reading</small>
+                            <h3 class="blog__post-caption">Why Choose SFCC for Your Web Shop?</h3>
+                            <small class="blog__post-date">februar 2019, 15 minutes reading</small>
                             <p>A healthy bee is a happy bee. We care about your health and each of our team members gets
                                 paid gym or crossfit membership and private physicians.</p>
-                            <span class="read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
+                            <span class="blog__read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
                         </div>
                     </figure>
-                    <figure class="post">
-                        <img class="post-img" src="./src/images/blog-img-3.png" alt="blog-img">
-                        <div class="post-info">
-                            <div class="blog-label-wrap">
-                                <span class="blog-label">Blog</span>
+                    <figure class="blog__single-post">
+                        <img class="blog__img" src="./src/images/blog-img-3.png" alt="blog-img">
+                        <div class="blog__post-info">
+                            <div class="blog__label-wrap">
+                                <span class="blog__label">Blog</span>
                             </div>
-                            <h3 class="post-caption">Bringing Ecommerce Personalization to Life – 5 Key Features</h3>
-                            <small class="blog-date">januar 2019, 5 minutes reading</small>
+                            <h3 class="blog__post-caption">Bringing Ecommerce Personalization to Life – 5 Key Features
+                            </h3>
+                            <small class="blog__post-date">januar 2019, 5 minutes reading</small>
                             <p>The fast growth of e-commerce is old news. With the expected global retail sales of $4.88
                                 billion by 2021, e-commerce is one of the most propulsive branches of the global
                                 economy.
                             </p>
-                            <span class="read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
+                            <span class="blog__read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
                         </div>
                     </figure>
                 </div>
@@ -255,19 +259,9 @@
 
         <section class="contact">
             <div class="container">
-                <div class="contact-content">
+                <div class="contact__content">
                     <div class="line"></div>
-                    <h2 class="contact-caption">Need to develop and scale your business?</h2>
-                    <p>Contact us, we respond within 24 hours.</p>
-                    <button class="blue-btn">REQUEST A QUOTE</button>
-                </div>
-            </div>
-        </section>
-        <section class="contact">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="line"></div>
-                    <h2 class="contact-caption">Need to develop and scale your business?</h2>
+                    <h2 class="contact__caption">Need to develop and scale your business?</h2>
                     <p>Contact us, we respond within 24 hours.</p>
                     <button class="blue-btn">REQUEST A QUOTE</button>
                 </div>
