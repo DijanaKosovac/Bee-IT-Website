@@ -45,51 +45,79 @@ nav {
     width: 20%;
 }
 
-.toggle {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: $yellow;
+.toggle,
+[id^=drop] {
     display: none;
 }
 
-@include mobile {
-    .header {
-        background: none;
+.mobile-nav {
+    background-color: $yellow;
+    display: none;
 
-        .container,
-        .header-content {
-            padding: 0;
-            justify-content: center;
-        }
+    .mobile-nav-logo {
+        padding: 1rem;
+    }
+}
+
+.menu li {
+    margin: 0px;
+    display: inline-block;
+}
+
+.menu .mobile-nav-links {
+    display: block;
+    padding: 14px 20px;
+    color: $black;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+.mobile-nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+
+@include mobile {
+    .nav {
+        display: none;
     }
 
-    nav {
-        width: 100%;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: $yellow;
+    .header {
+        background: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .toggle+a,
+    .menu {
         display: none;
-
-        .nav-list {
-            width: 100%;
-            align-items: flex-start;
-            flex-direction: column;
-            padding: 1rem 0;
-
-            li {
-                margin: 0.5rem 0;
-            }
-        }
     }
 
     .toggle {
         display: block;
+        padding: 14px 20px;
+        cursor: pointer;
     }
 
-    .active {
+    [id^=drop]:checked+ul {
         display: block;
-        padding: 1rem;
     }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-nav ul ul {
+        float: none;
+        position: static;
+    }
+
 }
 
 @include mobile-up {
@@ -103,44 +131,81 @@ nav {
         }
     }
 
-    nav {
-        width: 100%;
-        align-items: flex-start;
-        flex-direction: column;
-        background-color: $yellow;
+    .nav {
         display: none;
+    }
 
-        .nav-list {
-            width: 100%;
-            align-items: flex-start;
-            flex-direction: column;
-            padding: 1rem 0;
+    .header {
+        background: none;
+    }
 
-            li {
-                margin: 0.5rem 0;
-            }
-        }
+    .mobile-nav {
+        display: flex;
+    }
+
+    .toggle+a,
+    .menu {
+        display: none;
     }
 
     .toggle {
         display: block;
+        padding: 14px 20px;
+        cursor: pointer;
     }
 
-    .active {
+    [id^=drop]:checked+ul {
         display: block;
-        padding: 1rem;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-nav ul ul {
+        float: none;
+        position: static;
     }
 
 }
 
 @include tablet {
-    nav {
-        .logo {
-            width: 15%;
-        }
-
-        .nav-list {
-            width: 62%;
-        }
+    .nav {
+        display: none;
     }
+
+    .header {
+        background: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .toggle+a,
+    .menu {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        padding: 14px 20px;
+        cursor: pointer;
+    }
+
+    [id^=drop]:checked+ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-nav ul ul {
+        float: none;
+        position: static;
+    }
+
 }

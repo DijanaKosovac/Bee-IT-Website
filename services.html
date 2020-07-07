@@ -9,11 +9,40 @@
 </head>
 
 <body>
-    <div class="toggle">
-        <img class="menu" src="./src/images/menu.png" alt="menu-icon">
-    </div>
+    <nav class="mobile-nav">
+        <a href="index.html"><img class="mobile-nav-logo" src="./src/images/beeit-logo.svg" alt="logo"></a>
+        <label for="drop" class="toggle"><img src="./src/images/menu.png" alt="menu"></label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li>
+                <label for="drop-1" class="toggle">Services +</label>
+                <a href="services.html">Services</a>
+                <input type="checkbox" id="drop-1" />
+                <ul>
+                    <li><a class="mobile-nav-links" href="services.html">Services</a></li>
+                    <li><a class="mobile-nav-links" href="salesforce-commerce.html">Salesforce Commerce Cloud
+                            development </a></li>
+                    <li><a class="mobile-nav-links" href="#">Magento development services</a></li>
+                    <li><a class="mobile-nav-links" href="#">M-commerce development</a></li>
+                    <li><a class="mobile-nav-links" href="#">E-commerce web development outsourcing</a></li>
+                    <li><a class="mobile-nav-links" href="#">Mobile app development</a></li>
+                    <li><a class="mobile-nav-links" href="#">Custom web development</a></li>
+                    <li><a class="mobile-nav-links" href="#">Bespoke software development</a></li>
+                    <li><a class="mobile-nav-links" href="#">System integration and migration</a></li>
+                    <li><a class="mobile-nav-links" href="#">Maintenance and support</a></li>
+                    <li><a class="mobile-nav-links" href="#">SEO & Marketing</a></li>
+                </ul>
+            </li>
+            <li><a class="mobile-nav-links" href="#">Technologies</a></li>
+            <li><a class="mobile-nav-links" href="#">Our results</a></li>
+            <li><a class="mobile-nav-links" href="#">About us</a></li>
+            <li><a class="mobile-nav-links" href="#">Careers</a></li>
+        </ul>
+    </nav>
+
     <div id="mySidenav" class="sidenav">
         <div class="sidenav-wrapper">
+            <a href="#" class="closebtn">&times;</a>
             <h3 class="sidenav-headline">Services</h3>
             <ul class="side-list">
                 <li class="side-item"><a class="side-links" href="salesforce-commerce.html">Salesforce Commerce Cloud
@@ -46,7 +75,7 @@
                             <a href="index.html"><img src="./src/images/beeit-logo.svg" alt="logo"></a>
                         </div>
                         <ul class="nav-list">
-                            <li><a class="nav-link" href="services.html">Services</a></li>
+                            <li><a class="nav-link service" id="current">Services</a></li>
                             <li><a class="nav-link" href="#">Technologies</a></li>
                             <li><a class="nav-link" href="our-results.html">Our results</a></li>
                             <li><a class="nav-link" href="#">About us</a></li>
@@ -169,6 +198,7 @@
                 </div>
             </div>
         </section>
+
         <section class="blog">
             <div class="container">
                 <div class="blog-caption">
@@ -182,9 +212,11 @@
                             <div class="case-study-wrap">
                                 <span class="case-study">Case Study</span>
                             </div>
-                            <h3 class="post-caption">How to Easily Setup Eclipse for Salesforce Commerce Cloud (SFCC)</h3>
+                            <h3 class="post-caption">How to Easily Setup Eclipse for Salesforce Commerce Cloud (SFCC)
+                            </h3>
                             <small class="blog-date">februar 2019, 10 minutes reading</small>
-                            <p>What’s your preferable editor for development? We use both Visual Studio Code and Eclipse,
+                            <p>What’s your preferable editor for development? We use both Visual Studio Code and
+                                Eclipse,
                                 for many reasons. If you want to test the benefits of Eclipse, I got you covered.</p>
                             <span class="read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
                         </div>
@@ -211,11 +243,23 @@
                             <h3 class="post-caption">Bringing Ecommerce Personalization to Life – 5 Key Features</h3>
                             <small class="blog-date">januar 2019, 5 minutes reading</small>
                             <p>The fast growth of e-commerce is old news. With the expected global retail sales of $4.88
-                                billion by 2021, e-commerce is one of the most propulsive branches of the global economy.
+                                billion by 2021, e-commerce is one of the most propulsive branches of the global
+                                economy.
                             </p>
                             <span class="read-more">READ MORE</span> <img src="./src/images/path.png" alt="arrow">
                         </div>
                     </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="line"></div>
+                    <h2 class="contact-caption">Need to develop and scale your business?</h2>
+                    <p>Contact us, we respond within 24 hours.</p>
+                    <button class="blue-btn">REQUEST A QUOTE</button>
                 </div>
             </div>
         </section>

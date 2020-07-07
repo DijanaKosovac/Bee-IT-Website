@@ -10,9 +10,37 @@
 </head>
 
 <body>
-    <div class="toggle">
-        <img class="menu" src="./src/images/menu.png" alt="menu-icon">
-    </div>
+    <nav class="mobile-nav">
+        <a href="index.html"><img class="mobile-nav-logo" src="./src/images/beeit-logo.svg" alt="logo"></a>
+        <label for="drop" class="toggle"><img src="./src/images/menu.png" alt="menu"></label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li>
+                <label for="drop-1" class="toggle">Services +</label>
+                <a href="services.html">Services</a>
+                <input type="checkbox" id="drop-1" />
+                <ul>
+                    <li><a class="mobile-nav-links" href="services.html">Services</a></li>
+                    <li><a class="mobile-nav-links" href="salesforce-commerce.html">Salesforce Commerce Cloud
+                            development </a></li>
+                    <li><a class="mobile-nav-links" href="#">Magento development services</a></li>
+                    <li><a class="mobile-nav-links" href="#">M-commerce development</a></li>
+                    <li><a class="mobile-nav-links" href="#">E-commerce web development outsourcing</a></li>
+                    <li><a class="mobile-nav-links" href="#">Mobile app development</a></li>
+                    <li><a class="mobile-nav-links" href="#">Custom web development</a></li>
+                    <li><a class="mobile-nav-links" href="#">Bespoke software development</a></li>
+                    <li><a class="mobile-nav-links" href="#">System integration and migration</a></li>
+                    <li><a class="mobile-nav-links" href="#">Maintenance and support</a></li>
+                    <li><a class="mobile-nav-links" href="#">SEO & Marketing</a></li>
+                </ul>
+            </li>
+            <li><a class="mobile-nav-links" href="#">Technologies</a></li>
+            <li><a class="mobile-nav-links" href="#">Our results</a></li>
+            <li><a class="mobile-nav-links" href="#">About us</a></li>
+            <li><a class="mobile-nav-links" href="#">Careers</a></li>
+        </ul>
+    </nav>
+
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -252,7 +280,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                    <a href="index.html"><img src="./src/images/beeit-logo.svg" alt="bee"></a>
+                <a href="index.html"><img src="./src/images/beeit-logo.svg" alt="bee"></a>
                 <div class="social-links">
                     <span class="social-info">Our hive is always buzzing with ideas,
                         let us Bee your answer.</span>
