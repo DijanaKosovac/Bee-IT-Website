@@ -29,7 +29,7 @@
     line-height: 20px;
 }
 
-.salesforce-caption {
+.headline__subtitle {
     font-size: 60px;
     color: $header-font-color;
 }
@@ -37,6 +37,11 @@
 .headline-wrapper {
     @include flex(center, center, nowrap);
     width: 100%;
+}
+
+.headline__special {
+    color: $light-blue;
+    font-weight: 900;
 }
 
 .img-wrapper {
@@ -68,7 +73,15 @@
         width: 90%;
     }
 
-    .salesforce-caption {
+    .headline-wrapper {
+        flex-direction: column;
+    }
+
+    .img-wrapper {
+        width: 100%;
+    }
+
+    .headline__subtitle {
         font-size: 40px;
     }
 }
@@ -94,7 +107,15 @@
         width: 90%;
     }
 
-    .salesforce-caption {
+    .headline-wrapper {
+        flex-direction: column;
+    }
+
+    .img-wrapper {
+        width: 80%;
+    }
+
+    .headline__subtitle {
         font-size: 40px;
     }
 }
@@ -102,5 +123,13 @@
 @include tablet {
     .headline {
         width: 100%;
+    }
+
+    .headline-wrapper {
+        flex-direction: column;
+    }
+
+    .img-wrapper {
+        width: 80%;
     }
 }

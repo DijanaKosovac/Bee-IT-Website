@@ -3,6 +3,11 @@
     padding: 4rem;
 }
 
+.blog--skew {
+    padding-top: 13rem;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+}
+
 .blog__caption {
     text-align: center;
 }
@@ -20,6 +25,10 @@
     background-color: $primary-white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 0.5rem;
+}
+
+.blog__img {
+    object-fit: fill;
 }
 
 .blog__post-info {
@@ -98,6 +107,16 @@
 
 .blog__post-date--blue {
     color: $light-blue;
+}
+
+.blog__caption--left {
+    text-align: left;
+    width: 40%;
+}
+
+.blog__btn {
+    text-align: center;
+    padding: 2rem 0;
 }
 
 @include mobile {

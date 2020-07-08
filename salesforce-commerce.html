@@ -35,7 +35,7 @@
             </li>
             <li><a class="mobile-nav-links" href="#">Technologies</a></li>
             <li><a class="mobile-nav-links" href="our-results.html">Our results</a></li>
-            <li><a class="mobile-nav-links" href="#">About us</a></li>
+            <li><a class="mobile-nav-links" href="about-us.html">About us</a></li>
             <li><a class="mobile-nav-links" href="#">Careers</a></li>
         </ul>
     </nav>
@@ -78,7 +78,7 @@
                             <li><a class="header__nav-link  service" id="current">Services</a></li>
                             <li><a class="header__nav-link " href="#">Technologies</a></li>
                             <li><a class="header__nav-link " href="our-results.html">Our results</a></li>
-                            <li><a class="header__nav-link " href="#">About us</a></li>
+                            <li><a class="header__nav-link " href="about-us.html">About us</a></li>
                             <li><a class="header__nav-link " href="#">Careers</a></li>
                         </ul>
                         <div class="header__quote">
@@ -87,7 +87,7 @@
                     </nav>
                 </div>
                 <div class="headline">
-                    <h1 class="salesforce-caption">Salesforce Commerce Cloud development</h1>
+                    <h1 class="headline__subtitle">Salesforce Commerce Cloud development</h1>
                     <div class="line"></div>
                     <h4>We are developing online business and solutions for long-term
                         success.</h4>
@@ -152,53 +152,57 @@
                 </div>
             </section>
         </div>
-        <section class="partnerships">
+        <section class="partnership partnership--skew">
             <div class="container">
-                <div class="skew">
-                    <div class="partnership-content">
-                        <div class="partnership-caption">
-                            <h1>How we build partnerships</h1>
+                <div class="partnership__wrapper">
+                    <div class="partnership__content">
+                        <div class="partnership__caption">
+                            <h1 class="partnership__headline">How we build partnerships</h1>
                             <p>Every business is different, we understand that. We developed models of cooperation to
                                 help
                                 you match your business needs with the right model and the right team. </p>
                         </div>
-                        <div class="partnership-info">
-                            <div class="info-box box-1">
+                        <div class="partnership__info">
+                            <div class="partnership__info-box partnership__info-box--box1">
                                 <img src="./src/images/growth.png" alt="growth">
-                                <h3>T&M MODEL</h3>
+                                <h3 class="partnership__info-caption">T&M MODEL</h3>
                                 <h4>For long term projects</h4>
                                 <p>Want to launch your product faster? You can outsource the code to our team. A hint:
                                     the
                                     more hours you estimate on a monthly basis, the less the team costs.</p>
-                                <span>HIRE THE TEAM</span> <img src="./src/images/path.png" alt="arrow">
+                                <span class="partnership__info-detail">HIRE THE TEAM</span> <img
+                                    src="./src/images/path.png" alt="arrow">
                             </div>
-                            <div class="info-box box-2">
+                            <div class="partnership__info-box partnership__info-box--box2">
                                 <img src="./src/images/presentation.png" alt="presentation">
-                                <h3>'TEACH US' MODEL</h3>
+                                <h3 class="partnership__info-caption">'TEACH US' MODEL</h3>
                                 <h4>For long term projects</h4>
                                 <p>We teach your people but only invoice you the hours for our lead teacher. If you’re
                                     satisfied with their progress, you hire us and pay us by the hour for each student.
                                 </p>
-                                <span>TRAIN THE TEAM</span> <img src="./src/images/path.png" alt="arrow">
+                                <span class="partnership__info-detail">TRAIN THE TEAM</span> <img
+                                    src="./src/images/path.png" alt="arrow">
                             </div>
-                            <div class="info-box box-3">
+                            <div class="partnership__info-box partnership__info-box--box3">
                                 <img src="./src/images/goal.png" alt="goal">
-                                <h3>FIXED SCOPE MODEL</h3>
+                                <h3 class="partnership__info-caption">FIXED SCOPE MODEL</h3>
                                 <h4>For long-term projects & short-term projects</h4>
                                 <p>Already have a project in mind? We build your product for a fixed price and within
                                     defined time frame.</p>
-                                <span>START YOUR PROJECT</span> <img src="./src/images/path.png" alt="arrow">
+                                <span class="partnership__info-detail">START YOUR PROJECT</span> <img
+                                    src="./src/images/path.png" alt="arrow">
                             </div>
-                            <div class="info-box box-4">
+                            <div class="partnership__info-box partnership__info-box--box4">
                                 <img src="./src/images/sketchbook.png" alt="sketchbook">
-                                <h3>CREATE YOUR MODEL</h3>
+                                <h3 class="partnership__info-caption">CREATE YOUR MODEL</h3>
                                 <h4>For any type of projects</h4>
                                 <p>None of the models works for you? No problem. Contact us and we’ll tailor a solution
                                     for
                                     you. We are open and flexible to meet your needs and talk about different
                                     approaches.
                                 </p>
-                                <span>LET'S DO IT</span> <img src="./src/images/path.png" alt="arrow">
+                                <span class="partnership__info-detail">LET'S DO IT</span> <img
+                                    src="./src/images/path.png" alt="arrow">
                             </div>
                         </div>
                     </div>
@@ -283,7 +287,10 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <a href="index.html"><img src="./src/images/beeit-logo.svg" alt="bee"></a>
+                <div class="footer-logo">
+                    <a href="index.html"><img src="./src/images/beeit-logo.svg" alt="bee"></a>
+                    <p> &copy; 2018 Bee IT all rights reserved</p>
+                </div>
                 <div class="social-links">
                     <span class="social-info">Our hive is always buzzing with ideas,
                         let us Bee your answer.</span>

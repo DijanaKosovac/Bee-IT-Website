@@ -1,0 +1,27 @@
+.workplace {
+    width: 100%;
+    @include flex(space-around, flex-start, nowrap);
+    padding: 5rem 0;
+}
+
+.workplace__headline {
+    width: 32%;
+}
+
+.workplace__content {
+    width: 60%;
+}
+
+.workplace__office-img1 {
+    width: 100%;
+}
+
+.workplace__offices-2 {
+    @include flex(space-between, flex-start, nowrap);
+    margin-top: 2rem;
+}
+
+.workplace__office-img {
+    width: 45%;
+    margin-right: 1rem;
+}

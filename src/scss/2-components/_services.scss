@@ -47,7 +47,7 @@
 }
 
 .services--columns {
-    @include flex(center, center, wrap);
+    @include flex(center, flex-start, wrap);
     flex-direction: column;
 }
 
