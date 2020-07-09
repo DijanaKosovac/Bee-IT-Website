@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="dumbell">
+    <path d="M10.4839 5.24194L8.3871 5.24194L8.3871 2.09677L2.09677 2.09677L2.09677 5.24194L0 5.24194L0 0L10.4839 0L10.4839 5.24194Z" transform="translate(27.2583 0)" id="Path" fill="#323231" stroke="none" />
+    <path d="M10.4839 5.24194L0 5.24194L0 0L2.09677 0L2.09677 3.14516L8.3871 3.14516L8.3871 0L10.4839 0L10.4839 5.24194Z" transform="translate(27.2583 59.75806)" id="Path" fill="#323231" stroke="none" />
+    <g id="Group" transform="translate(0 11.53229)">
+      <path d="M28.3065 22.0161L28.3065 9.43548L36.6936 9.43548L36.6936 17.8226L38.7903 17.8226L38.7903 9.43548L44.0323 9.43548C45.1886 9.43548 46.129 8.49508 46.129 7.33871L46.129 0L44.0323 0L44.0323 7.33871L20.9677 7.33871L20.9677 0L18.871 0L18.871 7.33871C18.871 8.49508 19.8114 9.43548 20.9677 9.43548L26.2097 9.43548L26.2097 19.9194L20.5127 19.9194L16.5006 13.2317L11.8719 27.1155L10.3235 17.8226L0 17.8226L0 19.9194L8.5475 19.9194L11.1915 35.7877L17.0468 18.2199L19.326 22.0161L28.3065 22.0161Z" id="Path" fill="#323231" stroke="none" />
+      <path d="M37.5815 15.8684L34.9375 0L29.0823 17.5678L26.8031 13.7716L17.8226 13.7716L17.8226 26.3523L9.43548 26.3523L9.43548 17.9652L7.33871 17.9652L7.33871 26.3523L2.09677 26.3523C0.940403 26.3523 0 27.2927 0 28.449L0 35.7877L2.09677 35.7877L2.09677 28.449L25.1613 28.449L25.1613 35.7877L27.2581 35.7877L27.2581 28.449C27.2581 27.2927 26.3177 26.3523 25.1613 26.3523L19.9194 26.3523L19.9194 15.8684L25.6163 15.8684L29.6285 22.556L34.2571 8.67226L35.8056 17.9652L46.129 17.9652L46.129 15.8684L37.5815 15.8684Z" transform="translate(18.87097 6.147742)" id="Path" fill="#323231" stroke="none" />
+    </g>
+    <path d="M29.3548 8.3871L2.09677 8.3871C0.940403 8.3871 0 7.44669 0 6.29032L0 2.09677C0 0.940403 0.940403 0 2.09677 0L29.3548 0C30.5112 0 31.4516 0.940403 31.4516 2.09677L31.4516 6.29032C31.4516 7.44669 30.5112 8.3871 29.3548 8.3871Z" transform="translate(16.77441 4.193542)" id="Path" fill="#FEC108" stroke="none" />
+    <path d="M29.3548 8.3871L2.09677 8.3871C0.940403 8.3871 0 7.44669 0 6.29032L0 2.09677C0 0.940403 0.940403 0 2.09677 0L29.3548 0C30.5112 0 31.4516 0.940403 31.4516 2.09677L31.4516 6.29032C31.4516 7.44669 30.5112 8.3871 29.3548 8.3871Z" transform="translate(16.77441 52.41937)" id="Path" fill="#FEC108" stroke="none" />
+    <path d="M0 0L2.09677 0L2.09677 8.3871L0 8.3871L0 0Z" transform="translate(20.96777 4.193542)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09677 0L2.09677 8.3871L0 8.3871L0 0Z" transform="translate(25.16113 4.193542)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09678 0L2.09678 8.3871L0 8.3871L0 0Z" transform="translate(29.35498 4.193542)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09678 0L2.09678 8.3871L0 8.3871L0 0Z" transform="translate(33.54834 4.193542)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09678 0L2.09678 8.3871L0 8.3871L0 0Z" transform="translate(37.7417 4.193542)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09678 0L2.09678 8.3871L0 8.3871L0 0Z" transform="translate(41.93555 4.193542)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09677 0L2.09677 8.3871L0 8.3871L0 0Z" transform="translate(20.96777 52.41937)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09677 0L2.09677 8.3871L0 8.3871L0 0Z" transform="translate(25.16113 52.41937)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09678 0L2.09678 8.3871L0 8.3871L0 0Z" transform="translate(29.35498 52.41937)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09678 0L2.09678 8.3871L0 8.3871L0 0Z" transform="translate(33.54834 52.41937)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09678 0L2.09678 8.3871L0 8.3871L0 0Z" transform="translate(37.7417 52.41937)" id="Rectangle" fill="#323231" stroke="none" />
+    <path d="M0 0L2.09678 0L2.09678 8.3871L0 8.3871L0 0Z" transform="translate(41.93555 52.41937)" id="Rectangle" fill="#323231" stroke="none" />
+  </g>
+</svg>

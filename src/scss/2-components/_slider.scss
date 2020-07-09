@@ -87,13 +87,15 @@
 .next {
     bottom: 222px;
     position: absolute;
-    left: 126px
+    left: 126px;
+    cursor: pointer;
 }
 
 .prev {
     position: relative;
     right: 251px;
     bottom: 66px;
+    cursor: pointer;
 }
 
 .prev[aria-disabled=false] {

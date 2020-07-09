@@ -37,7 +37,7 @@
             <li><a class="mobile-nav-links" href="#">Technologies</a></li>
             <li><a class="mobile-nav-links" href="our-results.html">Our results</a></li>
             <li><a class="mobile-nav-links" href="about-us.html">About us</a></li>
-            <li><a class="mobile-nav-links" href="#">Careers</a></li>
+            <li><a class="mobile-nav-links" href="careers.html">Careers</a></li>
         </ul>
     </nav>
 
@@ -53,7 +53,7 @@
                         <li><a class="header__nav-link" href="#">Technologies</a></li>
                         <li><a class="header__nav-link" href="our-results.html">Our results</a></li>
                         <li><a class="header__nav-link" href="about-us.html">About us</a></li>
-                        <li><a class="header__nav-link" href="#">Careers</a></li>
+                        <li><a class="header__nav-link" href="careers.html">Careers</a></li>
                     </ul>
                     <div class="header__quote">
                         <button class="btn">Request a quote</button>
@@ -245,29 +245,41 @@
     <div class="container">
         <section class="form">
             <div class="form__wrapper">
-                <h1>Hey there. Let's talk!</h1>
-                <p>Do you want to work with us? Please fill in your details below.</p>
-                <form action="#">
-                    <div class="form__inputs">
-                        <input type="text" class="name" placeholder="Your name">
-                        <input type="email" class="email" placeholder="Your email">
-                        <input type="file" class="file" placeholder="Your email">
+                <div class="form__headline">
+                    <h1>Hey there. Let's talk!</h1>
+                    <p>Do you want to work with us? Please fill in your details below.</p>
+                </div>
+                <form action="#" class="form__group">
+                    <div class="form__fields">
+                        <div class="form__inputs">
+                            <label class="form__firstname" required>First name</label>
+                            <input type="text" class="form__input" name="firstname">
+                            <input type="email" class="form__input" name="email" placeholder="Your email">
+                            <input type="file" class="form__input" name="cv" placeholder="Upload your CV">
+                        </div>
+                        <div class="form__info">
+                            <select class="form__input" name="positions" name="position">
+                                <option value="" disabled selected>What job positions are you interest in?</option>
+                            </select>
+                            <textarea class="form__message" name="message" name="message"
+                                placeholder="Drop the note"></textarea>
+                        </div>
                     </div>
-                    <div class="form__info">
-                        <select class="form__positions" name="positions">
-                            <option value="" disabled selected>What job positions are you interest in?</option>
-                        </select>
-                        <textarea class="form__message" name="message" placeholder="Drop the note"></textarea>
+                    <div class="form__policy">
+                        <input type="checkbox" name="privacy-policy"> <span class="form__policy-info">I am hereby
+                            consenting
+                            that
+                            Bee IT can process
+                            my personal data for the purpose of making me an offer. Read our <a
+                                class="form__policy-link" href="#">Privacy
+                                Policy</a>
+                        </span>
                     </div>
-                    <input class="form__policy" type="checkbox" name="privacy-policy"> <span>I am hereby consenting that
-                        Bee IT can process
-                        my personal data for the purpose of making me an offer. Read our <a href="#">Privacy Policy</a>
-                    </span>
+                    <button class="blue-btn" type="submit">GET IN TOUCH</button>
                 </form>
-                <button class="blue-btn" type="submit">GET IN TOUCH</button>
             </div>
             <div class="form__image">
-                <img src="./src/images/form-image.svg" alt="form-image">
+                <img class="form__img1" src="./src/images/form-image.svg" alt="form-image">
             </div>
         </section>
     </div>

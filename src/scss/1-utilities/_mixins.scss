@@ -23,6 +23,7 @@
     border-radius: 29px;
     text-align: center;
     outline: none;
+    cursor: pointer;
 }
 
 @mixin blue-button {
@@ -39,6 +40,7 @@
     border: none;
     text-align: center;
     outline: none;
+    cursor: pointer;
 }
 
 @mixin horizontal-line($color) {

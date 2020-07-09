@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="65px" height="58px" viewBox="0 0 65 58" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="calendar">
+    <path d="M12 27L0 27L0 0L12 0L12 2.07692L1.99553 2.07692L1.99553 24.9231L12 24.9231L12 27Z" transform="translate(7 24)" id="Path" fill="#323231" stroke="none" />
+    <path d="M12 27L0 27L0 24.9231L10.0045 24.9231L10.0045 2.07692L0 2.07692L0 0L12 0L12 27Z" transform="translate(38 24)" id="Path" fill="#323231" stroke="none" />
+    <path d="M16.5 34C7.40254 34 0 26.3731 0 17C0 7.62686 7.40254 0 16.5 0C25.5975 0 33 7.62686 33 17C33 26.3731 25.5975 34 16.5 34Z" transform="translate(12 20)" id="Path" fill="#FEC108" stroke="none" />
+    <path d="M8.19396 7.58326e-15C5.20506 7.58326e-15 2.29587 1.05318 0 2.96777L1.36731 4.60616C3.00454 3.24135 5.01799 2.40652 7.12575 2.19338L7.12575 5.33625L9.26009 5.33625L9.26009 2.18869C14.2937 2.69157 18.3086 6.70574 18.8104 11.7397L15.6642 11.7397L15.6642 13.8742L18.8068 13.8742C18.5937 15.9832 17.7589 17.9968 16.3942 19.6331L18.0325 21C19.9469 18.7055 21 15.7961 21 12.807C21 5.7448 15.2556 0 8.19396 0L8.19396 7.58326e-15Z" transform="translate(20 24)" id="Path" fill="#323231" stroke="none" />
+    <path d="M13.8732 18.8066L13.8732 15.6638L11.7389 15.6638L11.7389 18.8113C6.70524 18.3084 2.69033 14.2943 2.18853 9.26026L5.33585 9.26026L5.33585 7.12576L2.19322 7.12576C2.40634 5.0168 3.24111 3.0032 4.60582 1.36689L2.96754 0C1.0531 2.29448 0 5.20388 0 8.19301C0 15.2552 5.74437 21 12.806 21C15.7949 21 18.7041 19.9468 21 18.0322L19.6327 16.3938C17.9955 17.7576 15.982 18.5935 13.8732 18.8066L13.8732 18.8066Z" transform="translate(16 29)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L0 6L4 6L4 4L2 4L2 0L0 0Z" transform="translate(28 32)" id="Path" fill="#323231" stroke="none" />
+    <path d="M56 18.72L56 5.2C56 2.33289 53.6738 0 50.8148 0L45.6296 0L45.6296 2.08L50.8148 2.08C52.5299 2.08 53.9259 3.48004 53.9259 5.2L53.9259 10.4L2.07407 10.4L2.07407 5.2C2.07407 3.48004 3.47012 2.08 5.18518 2.08L10.3704 2.08L10.3704 0L5.18518 0C2.32624 0 0 2.33289 0 5.2L0 52L56 52L56 41.6L53.9259 41.6L53.9259 49.92L2.07407 49.92L2.07407 12.48L53.9259 12.48L53.9259 18.72L56 18.72Z" transform="translate(0 6)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L6 0L6 2L0 2L0 0Z" transform="translate(15 5)" id="Path" fill="#000000" stroke="none" />
+    <path d="M0 0L7 0L7 2L0 2L0 0Z" transform="translate(25 5)" id="Path" fill="#000000" stroke="none" />
+    <path d="M0 0L7 0L7 2L0 2L0 0Z" transform="translate(35 5)" id="Path" fill="#000000" stroke="none" />
+    <path d="M0 0L2 0L2 2L0 2L0 0Z" transform="translate(63 27)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L9 0L9 2L0 2L0 0Z" transform="translate(52 27)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L2 0L2 2L0 2L0 0Z" transform="translate(63 31)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L9 0L9 2L0 2L0 0Z" transform="translate(52 31)" id="Path" fill="#323231" stroke="none" />
+    <g id="Group" transform="translate(9 0)">
+      <path d="M3.16667 12.866C1.42098 12.866 0 11.4226 0 9.64948L0 3.21649C0 1.44334 1.42098 0 3.16667 0C4.91235 0 6.33333 1.44334 6.33333 3.21649L6.33333 9.64948C6.33333 11.4226 4.91235 12.866 3.16667 12.866Z" transform="translate(0 0.06701031)" id="Path" fill="#FEC108" stroke="none" />
+      <path d="M3.16667 12.866C1.42098 12.866 0 11.4226 0 9.64948L0 3.21649C0 1.44334 1.42098 0 3.16667 0C4.91235 0 6.33333 1.44334 6.33333 3.21649L6.33333 9.64948C6.33333 11.4226 4.91235 12.866 3.16667 12.866Z" transform="translate(10.55556 0.06701031)" id="Path" fill="#FEC108" stroke="none" />
+      <path d="M3.16667 12.866C1.42098 12.866 0 11.4226 0 9.64948L0 3.21649C0 1.44334 1.42098 0 3.16667 0C4.91235 0 6.33333 1.44334 6.33333 3.21649L6.33333 9.64948C6.33333 11.4226 4.91235 12.866 3.16667 12.866Z" transform="translate(21.11111 0.06701031)" id="Path" fill="#FEC108" stroke="none" />
+      <path d="M3.16667 12.866C1.42098 12.866 0 11.4226 0 9.64948L0 3.21649C0 1.44334 1.42098 0 3.16667 0C4.91235 0 6.33333 1.44334 6.33333 3.21649L6.33333 9.64948C6.33333 11.4226 4.91235 12.866 3.16667 12.866Z" transform="translate(31.66667 0.06701031)" id="Path" fill="#FEC108" stroke="none" />
+    </g>
+    <path d="M0 0L2 0L2 2L0 2L0 0Z" transform="translate(63 35)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L9 0L9 2L0 2L0 0Z" transform="translate(52 35)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L2 0L2 2L0 2L0 0Z" transform="translate(63 39)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L9 0L9 2L0 2L0 0Z" transform="translate(52 39)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L2 0L2 2L0 2L0 0Z" transform="translate(63 43)" id="Path" fill="#323231" stroke="none" />
+    <path d="M0 0L9 0L9 2L0 2L0 0Z" transform="translate(52 43)" id="Path" fill="#323231" stroke="none" />
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+.form {
+    @include flex(center, flex-end, nowrap);
+    padding: 11rem 0;
+}
+
+.form__headline {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.form__group {
+    @include flex(center, center, nowrap);
+    flex-direction: column;
+}
+
+.form__wrapper,
+.form__image,
+.form__img1 {
+    width: 100%;
+}
+
+
+.form__fields {
+    @include flex(center, flex-start, nowrap);
+}
+
+.form__inputs {
+    @include flex(center, flex-start, nowrap);
+    flex-direction: column;
+    width: 100%;
+    color: $light-grey;
+}
+
+.form__policy {
+    width: 65%;
+}
+
+.form__policy-info {
+    color: $light-grey;
+}
+
+.form__policy-link {
+    color: $light-blue;
+}
+
+
+.form__input {
+    width: 340px;
+    padding: 10px;
+    border: 2px solid;
+    margin: 1rem;
+    border: solid 1px rgba(151, 151, 151, 0.2);
+    border-radius: 13px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form__firstname {
+    position: relative;
+    top: 28px;
+    left: 43px;
+    background: $primary-white;
+    color: $light-grey;
+}
