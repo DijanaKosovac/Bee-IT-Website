@@ -19,6 +19,10 @@
     margin: 1rem 0;
 }
 
+.services--column {
+    flex-direction: column;
+}
+
 .services__paragraph {
     width: 85%;
 }
@@ -31,6 +35,10 @@
 
 .services__info--full-width {
     width: 100%;
+}
+
+.services-container {
+    @include flex(center, center, nowrap);
 }
 
 .service__item {
@@ -135,7 +143,7 @@
 }
 
 .services__info--large {
-    width: 80%;
+    width: 90%;
     margin-top: 2rem;
 }
 
@@ -156,6 +164,100 @@
     color: $primary-white;
 }
 
+.services__line {
+    width: 311px;
+    height: 2px;
+    border: solid 1px rgba(151, 151, 151, 0.2);
+}
+
+.services__pagination {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(151, 151, 151, 0.2);
+    width: 9%;
+}
+
+.services__offer-wrap {
+    @include flex(center, center, nowrap);
+    width: 100%;
+}
+
+.services__wrapper--aligned {
+    width: 35%;
+    text-align: justify;
+}
+
+.services__wrapper--top {
+    position: relative;
+    top: 170px;
+}
+
+.service__item--position {
+    &:nth-child(even) {
+        align-self: initial;
+    }
+
+    &:nth-child(odd) {
+        align-self: initial;
+    }
+}
+
+.service__item--position {
+    width: 45%;
+
+    &:nth-child(even) {
+        align-self: flex-start;
+    }
+
+    &:nth-child(odd) {
+        align-self: flex-end;
+    }
+}
+
+.service__single-box--aligned {
+    text-align: justify;
+}
+
+.service__technologies {
+    color: $light-blue;
+    font-size: 14px;
+}
+
+.service__item--open-position {
+    background-color: $light-blue;
+}
+
+.service__job--open,
+.service__job-headline--open {
+    color: $primary-white;
+}
+
+.service__technologies--color {
+    color: $skyblue;
+}
+
+.service__single-box--color {
+    color: $primary-white;
+}
+
+.service__link-wrapper {
+    background: url('/src/images/path.png') no-repeat;
+    background-position: 55px;
+}
+
+.service__link {
+    color: $light-blue;
+    text-decoration: none;
+}
+
+.service__link--special {
+    color: $skyblue;
+}
+
+.service__link-wrapper--bkg {
+    background: url('/src/images/Path-lightblue.png') no-repeat;
+    background-position: 55px;
+}
 
 
 @include mobile {
@@ -167,6 +269,10 @@
     .services__headline {
         width: 90%;
         text-align: center;
+    }
+
+    .services--background {
+        clip-path: none;
     }
 
     .services__paragraph {
@@ -197,6 +303,15 @@
     .services__wrapper--columns {
         width: 90%;
         flex-direction: column;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .services__wrapper--top {
+        top: 0;
+        margin-bottom: 30px;
     }
 }
 

@@ -22,6 +22,16 @@
     background-color: white;
 }
 
+.contact__paragraph {
+    width: 45%;
+    text-align: center;
+}
+
+.contact__info--blue {
+    color: $light-blue;
+    font-weight: 700;
+}
+
 
 @include mobile {
     .contact {
@@ -31,8 +41,11 @@
     .contact__content {
         text-align: center;
     }
-}
 
+    .contact__paragraph {
+        width: 100%;
+    }
+}
 
 
 @include mobile-up {
