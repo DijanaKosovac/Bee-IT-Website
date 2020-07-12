@@ -327,36 +327,52 @@
                                         <option value="fixed-scope project">Teach Us Model</option>
                                         <option value="fixed-scope project">Something completely different</option>
                                     </select>
-                                    <input type="text" name="first-name" placeholder="Your name">
-                                    <input type="email" name="email" placeholder="Your email">
-                                    <input type="company" name="company" placeholder="Your company">
-                                    <input type="text" name="message" placeholder="Drop the note">
-                                    <div class="file">
-                                        <label>Tell us more about your project or idea</label>
-                                        <input type="file">
+                                    <input class="modal-inputs" type="text" name="first-name" placeholder="Your name">
+                                    <input class="modal-inputs" type="email" name="email" placeholder="Your email">
+                                    <input class="modal-inputs" type="company" name="company"
+                                        placeholder="Your company">
+                                    <input class="modal-inputs" type="text" name="message" placeholder="Drop the note">
+                                    <div class="form-control">
+                                        <span class="file-label">Tell us more about your project or idea</span>
+                                        <label class="btn btn--larger">
+                                            <input type="file" class="file-input">
+                                            Upload your file
+                                        </label>
+
                                     </div>
                                     <select name="topic">
                                         <option value="" disabled selected>How did you find us?
                                         </option>
                                     </select>
-                                    <input type="checkbox" name="privacy-policy" class="policy"> <span
-                                        class="form__policy-info">I am
-                                        hereby
-                                        consenting
-                                        that
-                                        Bee IT can process
-                                        my personal data for the purpose of making me an offer. Read our <a
-                                            class="form__policy-link" href="#">Privacy
-                                            Policy</a>
+                                    <div class="policy-wrapper">
+                                        <input type="checkbox" name="privacy-policy" class="policy-checkbox"> <span
+                                            class="form__policy-info">I am
+                                            hereby
+                                            consenting
+                                            that
+                                            Bee IT can process
+                                            my personal data for the purpose of making me an offer. Read our <a
+                                                class="form__policy-link" href="#">Privacy
+                                                Policy</a>
+                                    </div>
+                                    <button class="blue-btn blue-btn--position">GET IN TOUCH</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div class="modal__info">
-                        <p>Want to visit our office?</p>
-                        <p>Here's where you can find us</p>
-                        <p>Narodnog fronta 23, Novi Sad, Serbia
-                            office@beeit.rs</p>
+                        <div class="modal__location">
+                            <p class="modal__location-info">Want to visit our office?</p>
+                            <p class="modal__location-address">Here's where you can find us</p>
+                            <p>Narodnog fronta 23, Novi Sad, Serbia
+                                office@beeit.rs</p>
+                        </div>
+                        <div class="find-more">
+                            <p>Still not sure what model of cooperation suits your business best?</p>
+                            <div class="service__link-wrapper service__link-wrapper--align">
+                                <a class="service__link" href="#">FIND OUT MORE</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>

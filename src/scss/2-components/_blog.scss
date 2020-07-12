@@ -146,6 +146,15 @@
     .blog__caption--small {
         width: 100%;
     }
+
+    .blog--skew {
+        clip-path: none;
+    }
+
+    .blog__caption--left {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @include tablet {

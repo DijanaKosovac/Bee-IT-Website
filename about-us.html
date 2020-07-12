@@ -249,13 +249,20 @@
                     <h1>Hey there. Let's talk!</h1>
                     <p>Do you want to work with us? Please fill in your details below.</p>
                 </div>
-                <form action="#" class="form__group">
+                <form action="#" role="form" onsubmit="return checkForm(this)" class="form__group">
                     <div class="form__fields">
                         <div class="form__inputs">
                             <label class="form__firstname" required>First name</label>
                             <input type="text" class="form__input" name="firstname">
+                            <span class="message"></span>
                             <input type="email" class="form__input" name="email" placeholder="Your email">
-                            <input type="file" class="form__input" name="cv" placeholder="Upload your CV">
+                            <span class="messageEmail"></span>
+                            <div class="cv">
+                                <label for="cv" class="cv-label">
+                                    <input type="file" name="cv" id="cv">
+                                    Upload your cv
+                                </label>
+                            </div>
                         </div>
                         <div class="form__info">
                             <select class="form__input" name="positions" name="position">
@@ -275,7 +282,7 @@
                                 Policy</a>
                         </span>
                     </div>
-                    <button class="blue-btn" type="submit">GET IN TOUCH</button>
+                    <button class="blue-btn" id="submit" type="submit">GET IN TOUCH</button>
                 </form>
             </div>
             <div class="form__image">
@@ -304,6 +311,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="./src/js/index.js"></script>
+    <script src="./src/js/about-us.js"></script>
 </body>
 
 </html>
