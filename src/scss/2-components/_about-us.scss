@@ -1,7 +1,7 @@
 .workplace {
     width: 100%;
     @include flex(space-around, flex-start, nowrap);
-    padding: 5rem 0;
+    padding: 70px 0;
 }
 
 .workplace__headline {
@@ -18,12 +18,12 @@
 
 .workplace__offices-2 {
     @include flex(space-between, flex-start, nowrap);
-    margin-top: 2rem;
+    margin-top: 20px;
 }
 
 .workplace__office-img {
     width: 45%;
-    margin-right: 1rem;
+    margin-right: 10px;
 }
 
 @include mobile {

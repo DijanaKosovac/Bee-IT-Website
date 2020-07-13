@@ -1,10 +1,10 @@
 .services {
     @include flex(space-around, flex-start, wrap);
-    margin: 4rem auto;
+    margin: 60px auto;
 }
 
 .services--background {
-    padding-top: 13rem;
+    padding-top: 100px;
     background-color: $primary-background;
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
 }
@@ -42,9 +42,9 @@
 }
 
 .service__item {
-    width: 42%;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    width: 45%;
+    padding: 30px;
+    margin-bottom: 25px;
     border-radius: 6px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
@@ -100,8 +100,8 @@
 
 .service__transparent-caption {
     font-size: 50px;
-    margin-left: -2rem;
-    padding-bottom: 1rem;
+    margin-left: -30px;
+    padding-bottom: 15px;
     opacity: 0.5;
     color: $transparent-headline;
 }
@@ -117,10 +117,13 @@
     text-align: right;
 }
 
+.service__item--salesforce {
+    width: 37%;
+}
 
 .service__single-box {
-    padding: 0.5rem 0;
-    text-align: center;
+    padding: 10px 0;
+    text-align: justify;
 }
 
 .service__single-box--align {
@@ -138,18 +141,18 @@
 }
 
 .services__wrapper--columns {
-    width: 70%;
+    width: 100%;
     @include flex(center, baseline, nowrap);
 }
 
 .services__info--large {
     width: 90%;
-    margin-top: 2rem;
+    margin-top: 20px;
 }
 
 .service__headline-wrapper {
     width: 100%;
-    margin-right: 5rem;
+    margin-right: 30px;
 }
 
 .service__headline-wrapper {
@@ -158,6 +161,10 @@
 
 .special {
     background: $light-blue;
+}
+
+.line--blue {
+    @include horizontal-line($light-blue);
 }
 
 .service__position--special {
@@ -288,7 +295,7 @@
         @include flex(center, center, wrap);
         flex-direction: column;
         width: 100%;
-        padding-top: 2rem;
+        padding-top: 25px;
     }
 
     .service__item {
@@ -335,7 +342,7 @@
         @include flex(center, center, wrap);
         flex-direction: column;
         width: 100%;
-        padding-top: 2rem;
+        padding-top: 30px;
     }
 
     .service__item {
@@ -347,7 +354,6 @@
         }
     }
 }
-
 
 @include tablet {
 

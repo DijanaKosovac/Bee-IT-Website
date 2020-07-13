@@ -32,7 +32,7 @@
     font-size: 14px;
     font-weight: 500;
     border-radius: 29px;
-    margin-top: 2rem;
+    margin-top: 25px;
     background-color: $light-blue;
     color: $primary-white;
     font-size: 12px;
@@ -47,14 +47,14 @@
     width: 36px;
     height: 1px;
     border: 4px solid $color;
-    margin: 2rem 0;
+    margin: 18px 0;
 }
 
 @mixin main-headline {
     font-size: 36px;
     color: $black;
     font-weight: 900;
-    margin: 1rem 0;
+    margin: 15px 0;
 }
 
 @mixin mobile {

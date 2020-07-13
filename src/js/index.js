@@ -28,3 +28,25 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+
+function validateFrom(form) {
+    let warningMessage = document.getElementsByClassName('warning')[0];
+    let warningEmail = document.getElementsByClassName('warningEmail')[0];
+    let name = form.firstName.value;
+    let emailValue = form.email.value;
+    let isValid = true;
+
+    if (name == '') {
+        form.firstName.style.borderColor = 'red';
+        warningMessage.innerText = 'This field is required';
+        isValid = false;
+    }
+
+    if (emailValue == '') {
+        form.email.style.borderColor = 'red';
+        warningEmail.innerText = 'This field is required';
+        isValid = false;
+    }
+    return isValid;
+}

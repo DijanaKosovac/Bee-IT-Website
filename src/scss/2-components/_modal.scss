@@ -49,13 +49,25 @@
         width: 90%;
         border: none;
         margin: 20px 0;
-        border-bottom: solid 0.75px rgba(155, 155, 155, 0.5);
+        outline: none;
+        border-bottom: solid 1px rgba(155, 155, 155, 0.5);
 
         &::placeholder {
             color: $light-grey;
         }
     }
 }
+
+.modal-inputs:focus {
+    border-color: $light-blue;
+}
+
+.warning,
+.warningEmail {
+    color: red;
+    font-size: 13px;
+}
+
 
 .form-control {
     width: 90%;

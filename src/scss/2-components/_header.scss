@@ -13,7 +13,7 @@
 
 .header__content {
     @include flex(space-between, center, wrap);
-    padding-top: 2rem;
+    padding-top: 30px;
 }
 
 
@@ -64,12 +64,12 @@
     display: none;
 
     .mobile-nav-logo {
-        padding: 1rem;
+        padding: 15px;
     }
 }
 
 .menu li {
-    margin: 0px;
+    margin: 0;
     display: inline-block;
 }
 
@@ -81,6 +81,16 @@
     text-decoration: none;
 }
 
+.mobile-service-list {
+    padding: 10px 0;
+}
+
+.mobile-service-links {
+    color: #707070;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 50px;
+}
 
 .mobile-nav ul ul {
     display: none;

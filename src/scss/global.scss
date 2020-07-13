@@ -26,7 +26,7 @@
 
 p {
     font-size: $paragraph_font-size;
-    padding: 0.5rem 0;
+    padding: 10px 0;
     font-weight: 400;
     line-height: 20px;
 }
@@ -39,7 +39,7 @@ h4 {
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
-    padding: 1rem 0;
+    padding: 15px 0;
 }
 
 .container {
@@ -58,7 +58,7 @@ h4 {
     list-style-type: none;
 
     .report-list {
-        padding: 0.5rem 0;
+        padding: 7px 0;
 
         &:before {
             content: "\2022";

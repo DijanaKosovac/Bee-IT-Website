@@ -1,6 +1,6 @@
 .contact {
     background-color: $primary-background;
-    padding: 5rem;
+    padding: 70px;
 }
 
 .contact__content {
@@ -8,13 +8,10 @@
     flex-direction: column;
 }
 
-.line {
-    @include horizontal-line($yellow);
-}
 
 .contact__caption {
     font-size: 24px;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 
@@ -32,10 +29,14 @@
     font-weight: 700;
 }
 
+.line--yellow {
+    @include horizontal-line($yellow);
+}
+
 
 @include mobile {
     .contact {
-        padding: 2rem;
+        padding: 30px;
     }
 
     .contact__content {
@@ -50,7 +51,7 @@
 
 @include mobile-up {
     .contact {
-        padding: 3rem;
+        padding: 40px;
     }
 
     .contact__content {
