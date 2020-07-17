@@ -87,10 +87,6 @@ let slideField3 = document.getElementsByClassName('workplace__office-img')[0];
 let slideField4 = document.getElementsByClassName('workplace__office-image')[0];
 
 function randomSlide(element) {
-    let el1 = slideField1.getAttribute('data-name');
-    let el2 = slideField2.getAttribute('data-name');
-    let el3 = slideField3.getAttribute('data-name');
-    let el4 = slideField4.getAttribute('data-name');
     let randomNumber = (Math.floor(Math.random() * 3) + 1);
     return element.src = `./src/imagesSlider/${element.getAttribute('data-name')}/image-${randomNumber}.jpg`;
 }
@@ -103,5 +99,5 @@ function main() {
 
 setInterval(() => {
     main();
-}, 2000);
+}, 5000);
 
