@@ -38,6 +38,7 @@ let slideField4 = document.getElementsByClassName('workplace__office-image')[0];
 function checkImage(elem) {
     let randomNumber = (Math.floor(Math.random() * 3) + 1);
     let dataValue = elem.getAttribute('data-slide-number');
+    console.log('random ' + randomNumber);
     if (randomNumber === +dataValue) {
         checkImage(elem);
     } else {
@@ -57,7 +58,7 @@ function checkSlide(slide) {
     if (randomNumber === +slideValue) {
         checkSlide(slide);
     } else {
-        slide.setAttribute('data-slide-number', randomNumber.toString());
+        slide.setAttribute('data-slide-element', randomNumber.toString());
     }
     return randomNumber;
 }
