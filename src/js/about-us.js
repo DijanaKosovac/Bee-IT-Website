@@ -35,21 +35,41 @@ let slideField2 = document.getElementsByClassName('workplace__office-img1')[0];
 let slideField3 = document.getElementsByClassName('workplace__office-img')[0];
 let slideField4 = document.getElementsByClassName('workplace__office-image')[0];
 
-function randomSlide(element) {
+function checkImage(elem) {
     let randomNumber = (Math.floor(Math.random() * 3) + 1);
-    slideField1.setAttribute('data-slide-number', randomNumber.toString());
-    slideField2.setAttribute('data-slide-number', randomNumber.toString());
-    slideField3.setAttribute('data-slide-number', randomNumber.toString());
-    slideField4.setAttribute('data-slide-number', randomNumber.toString());
-    return element.src = `./src/imagesSlider/${element.getAttribute('data-name')}/image-${randomNumber}.jpg`;
+    let dataValue = elem.getAttribute('data-slide-number');
+    if (randomNumber === +dataValue) {
+        checkImage(elem);
+    } else {
+        elem.setAttribute('data-slide-number', randomNumber.toString());
+    }
+    console.log('random ' + randomNumber);
+    return randomNumber;
+}
+
+function randomSlide(element) {
+    return element.src = `./src/imagesSlider/${element.getAttribute('data-name')}/image-${checkImage(element)}.jpg`;
+}
+
+function checkSlide(slide) {
+    let randomNumber = Math.floor(Math.random() * 4);
+    let slideValue = slide.getAttribute('data-slide-element');
+    if (randomNumber === +slideValue) {
+        checkSlide(slide);
+    } else {
+        slide.setAttribute('data-slide-number', randomNumber.toString());
+    }
+    return randomNumber;
 }
 
 function main() {
     let sliderArray = [slideField1, slideField2, slideField3, slideField4];
-    let randomNumber = Math.floor(Math.random() * 4);
+    let random = Math.floor(Math.random() * 4);
+    let randomNumber = checkSlide(sliderArray[random]);
     randomSlide(sliderArray[randomNumber]);
 }
 
 setInterval(() => {
     main();
 }, 2000);
+
