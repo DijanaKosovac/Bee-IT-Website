@@ -35,39 +35,44 @@ let slideField2 = document.getElementsByClassName('workplace__office-img1')[0];
 let slideField3 = document.getElementsByClassName('workplace__office-img')[0];
 let slideField4 = document.getElementsByClassName('workplace__office-image')[0];
 
-function checkImage(elem) {
-    let randomNumber = (Math.floor(Math.random() * 3) + 1);
-    let dataValue = elem.getAttribute('data-slide-number');
-    console.log('random ' + randomNumber);
-    if (randomNumber === +dataValue) {
-        checkImage(elem);
+function numberCheck(number, dataValue) {
+    if (number === dataValue) {
+        return true;
     } else {
-        elem.setAttribute('data-slide-number', randomNumber.toString());
+        return false;
     }
-    console.log('random ' + randomNumber);
-    return randomNumber;
 }
 
-function randomSlide(element) {
+function checkImage(image) {
+    let randomImageNumber = (Math.floor(Math.random() * 3) + 1);
+    let dataValue = image.getAttribute('data-slide-number');
+    if (numberCheck(randomImageNumber, dataValue)) {
+        checkImage(image);
+    } else {
+        image.setAttribute('data-slide-number', randomImageNumber.toString());
+    }
+    return randomImageNumber;
+}
+
+function generateRandomSlide(element) {
     return element.src = `./src/imagesSlider/${element.getAttribute('data-name')}/image-${checkImage(element)}.jpg`;
 }
 
-function checkSlide(slide) {
-    let randomNumber = Math.floor(Math.random() * 4);
-    let slideValue = slide.getAttribute('data-slide-element');
-    if (randomNumber === +slideValue) {
-        checkSlide(slide);
+function checkSlide(slide, sliderNumber) {
+    let dataValue = slide.getAttribute('data-slide-element');
+    if (numberCheck(sliderNumber, +dataValue)) {
+        sliderNumber = Math.floor(Math.random() * 4);
     } else {
-        slide.setAttribute('data-slide-element', randomNumber.toString());
+        slide.setAttribute('data-slide-element', sliderNumber.toString());
     }
-    return randomNumber;
+    return sliderNumber;
 }
 
 function main() {
     let sliderArray = [slideField1, slideField2, slideField3, slideField4];
-    let random = Math.floor(Math.random() * 4);
-    let randomNumber = checkSlide(sliderArray[random]);
-    randomSlide(sliderArray[randomNumber]);
+    let sliderNumber = Math.floor(Math.random() * 4);
+    let randomSlide = checkSlide(sliderArray[sliderNumber], sliderNumber);
+    generateRandomSlide(sliderArray[randomSlide]);
 }
 
 setInterval(() => {
